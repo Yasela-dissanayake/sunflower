@@ -1,3 +1,5 @@
+"use client";
+
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
@@ -10,9 +12,13 @@ import {
   CheckCircle,
   Sparkles,
   HelpCircle,
+  ChevronDown,
+  ChevronUp,
 } from "lucide-react";
+import { useState } from "react";
 
 export default function ReikiPage() {
+  const [showAllBenefits, setShowAllBenefits] = useState(false);
   const benefits = [
     "Reduces stress and promotes deep relaxation",
     "Accelerates natural healing processes",
@@ -157,18 +163,37 @@ export default function ReikiPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {benefits.map((benefit, index) => (
-              <Card
-                key={benefit}
-                className="p-6 border-border animate-fade-in-up hover:scale-105 transition-transform duration-300"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                  <p className="text-foreground leading-relaxed">{benefit}</p>
-                </div>
-              </Card>
-            ))}
+            {(showAllBenefits ? benefits : benefits.slice(0, 6)).map(
+              (benefit, index) => (
+                <Card
+                  key={benefit}
+                  className="p-6 border-border animate-fade-in-up hover:scale-105 transition-transform duration-300"
+                  style={{ animationDelay: `${index * 100}ms` }}
+                >
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                    <p className="text-foreground leading-relaxed">{benefit}</p>
+                  </div>
+                </Card>
+              )
+            )}
+          </div>
+          <div className="flex justify-center mt-8">
+            <Button
+              variant="outline"
+              onClick={() => setShowAllBenefits(!showAllBenefits)}
+              className="flex items-center gap-2"
+            >
+              {showAllBenefits ? (
+                <>
+                  Show Less <ChevronUp className="h-4 w-4" />
+                </>
+              ) : (
+                <>
+                  Show More Benefits <ChevronDown className="h-4 w-4" />
+                </>
+              )}
+            </Button>
           </div>
         </div>
       </section>
