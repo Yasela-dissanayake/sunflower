@@ -4,7 +4,7 @@ import { HeroCarousel } from "@/components/hero-carousel"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import Link from "next/link"
-import { Flower2, Heart, Sparkles, Wind, Brain, Music, Calculator } from "lucide-react"
+import { Flower2, Heart, Sparkles, Wind, Brain, Music } from "lucide-react"
 
 export default function HomePage() {
   const services = [
@@ -40,7 +40,7 @@ export default function HomePage() {
       href: "/services/meditation",
     },
     {
-      icon: Calculator,
+      icon: Heart,
       title: "Numerology",
       description: "Discover your life path and purpose through the ancient wisdom of numbers.",
       href: "/services/numerology",

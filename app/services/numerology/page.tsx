@@ -3,7 +3,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import Link from "next/link"
-import { Calculator, CheckCircle } from "lucide-react"
+import { Heart, CheckCircle } from "lucide-react"
 
 export default function NumerologyPage() {
   const insights = [
@@ -36,7 +36,7 @@ export default function NumerologyPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm mb-6">
-                <Calculator className="h-4 w-4" />
+                <Heart className="h-4 w-4" />
                 <span>Ancient Wisdom</span>
               </div>
               <h1 className="text-5xl font-bold text-foreground mb-6">Numerology</h1>
