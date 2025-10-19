@@ -10,14 +10,14 @@ export default function PricingPage() {
     {
       name: "Reiki Healing Session",
       duration: "60 minutes",
-      price: "AED 300",
+      price: "AED 410",
       description: "Experience deep relaxation and energy balance through traditional Reiki healing.",
       features: ["Full body energy scan", "Chakra balancing", "Energy blockage release", "Post-session guidance"],
     },
     {
       name: "Access Bars Session",
       duration: "90 minutes",
-      price: "AED 400",
+      price: "AED 500",
       description: "Release limiting beliefs and mental clutter by activating 32 points on your head.",
       features: [
         "32-point head activation",
@@ -29,14 +29,14 @@ export default function PricingPage() {
     {
       name: "Access Energy Facelift",
       duration: "60 minutes",
-      price: "AED 350",
+      price: "AED 500",
       description: "Natural, non-invasive facial rejuvenation through energy work.",
       features: ["Face and neck energy work", "Natural lifting effect", "Skin rejuvenation", "Relaxation and glow"],
     },
     {
       name: "Sound Healing Session",
       duration: "75 minutes",
-      price: "AED 350",
+      price: "AED 399",
       description: "Harmonize your energy through therapeutic sound vibrations.",
       features: ["Singing bowls therapy", "Vibrational healing", "Deep meditation state", "Energy alignment"],
     },
@@ -50,14 +50,14 @@ export default function PricingPage() {
     {
       name: "Numerology Reading",
       duration: "60 minutes",
-      price: "AED 400",
+      price: "AED 550",
       description: "Discover your life path and purpose through the wisdom of numbers.",
       features: ["Life path analysis", "Personal year forecast", "Name numerology", "Detailed report"],
     },
     {
       name: "Karmic Numerology",
       duration: "90 minutes",
-      price: "AED 500",
+      price: "AED 550",
       description: "Deep dive into your karmic patterns and soul's journey.",
       features: ["Karmic debt analysis", "Soul purpose revelation", "Past life insights", "Comprehensive report"],
     },
@@ -176,7 +176,7 @@ export default function PricingPage() {
                 <h3 className="text-2xl font-semibold text-foreground mb-2">{service.name}</h3>
                 <p className="text-sm text-muted-foreground mb-4">{service.duration}</p>
                 <div className="flex items-baseline gap-2 mb-4">
-                  <span className="text-4xl font-bold text-primary">{service.price}</span>
+                  {/* <span className="text-4xl font-bold text-primary">{service.price}</span> */}
                 </div>
                 <p className="text-muted-foreground leading-relaxed">{service.description}</p>
               </div>
