@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Flower2, Mail, Phone, MapPin } from "lucide-react";
+import { Flower2, Mail, Phone, MapPin, Instagram } from "lucide-react";
 
 export function Footer() {
   return (
@@ -125,6 +125,15 @@ export function Footer() {
                 </a>
               </li>
               <li className="flex items-start gap-2">
+                <Instagram className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                <a
+                  href="https://www.instagram.com/sunflower_shaista?igsh=OHI0OTM0Z2ljZ2F1&utm_source=qr"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  @sunflower_shaista
+                </a>
+              </li>
+              <li className="flex items-start gap-2">
                 <Phone className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                 <a
                   href="tel:+971XXXXXXXXX"
@@ -139,7 +148,7 @@ export function Footer() {
 
         <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
           <p>
-            &copy; {new Date().getFullYear()} Sunflowers - The Healing Bliss.
+            &copy; {new Date().getFullYear()} KeyGains LLC FZ.
             All rights reserved.
           </p>
         </div>
