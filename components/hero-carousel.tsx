@@ -9,10 +9,10 @@ interface CarouselSlide {
 }
 
 const slides: CarouselSlide[] = [
-  {
-    image: "/peaceful-meditation-healing-energy-sunflower-natur.jpg",
-    alt: "Peaceful meditation and healing energy",
-  },
+  // {
+  //   image: "/peaceful-meditation-healing-energy-sunflower-natur.jpg",
+  //   alt: "Peaceful meditation and healing energy",
+  // },
   {
     image: "/energy-healer-peaceful-serene-natural-light.jpg",
     alt: "Energy healer in serene natural light",

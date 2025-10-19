@@ -50,8 +50,7 @@ export default function AboutPage() {
               <h1 className="text-5xl font-bold text-foreground mb-6">About Me</h1>
               <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
                 I am a Certified Early Childhood Educator, a Reiki Master Teacher, a Certified Access Bars Practitioner,
-                an Access Energetic Facelift Practitioner, and a Numerologist. My path to becoming an energy healer
-                wasn't always clear.
+                an Access Energetic Facelift Practitioner, and a Numerologist.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 Like many, I experienced periods of stress, disconnection, and searching for deeper meaning in life. It

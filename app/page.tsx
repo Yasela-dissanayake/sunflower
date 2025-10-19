@@ -1,10 +1,10 @@
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
-import { HeroCarousel } from "@/components/hero-carousel"
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import Link from "next/link"
-import { Flower2, Heart, Sparkles, Wind, Brain, Music } from "lucide-react"
+import { Navigation } from "@/components/navigation";
+import { Footer } from "@/components/footer";
+import { HeroCarousel } from "@/components/hero-carousel";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import Link from "next/link";
+import { Flower2, Heart, Sparkles, Wind, Brain, Music } from "lucide-react";
 
 export default function HomePage() {
   const services = [
@@ -18,40 +18,46 @@ export default function HomePage() {
     {
       icon: Brain,
       title: "Access Bars",
-      description: "Gentle touch therapy that releases electromagnetic charges of thoughts, feelings, and emotions.",
+      description:
+        "Gentle touch therapy that releases electromagnetic charges of thoughts, feelings, and emotions.",
       href: "/services/access-bars",
     },
     {
       icon: Sparkles,
       title: "Access Energy Facelift",
-      description: "Natural, non-invasive facelift that rejuvenates and revitalizes your appearance.",
+      description:
+        "Natural, non-invasive facelift that rejuvenates and revitalizes your appearance.",
       href: "/services/access-energy-facelift",
     },
     {
       icon: Music,
       title: "Sound Healing",
-      description: "Therapeutic application of sound frequencies to restore harmony and balance in the body.",
+      description:
+        "Therapeutic application of sound frequencies to restore harmony and balance in the body.",
       href: "/services/sound-healing",
     },
     {
       icon: Wind,
       title: "Meditation",
-      description: "Guided meditation sessions to calm the mind, reduce anxiety, and enhance inner peace.",
+      description:
+        "Guided meditation sessions to calm the mind, reduce anxiety, and enhance inner peace.",
       href: "/services/meditation",
     },
     {
       icon: Heart,
       title: "Numerology",
-      description: "Discover your life path and purpose through the ancient wisdom of numbers.",
+      description:
+        "Discover your life path and purpose through the ancient wisdom of numbers.",
       href: "/services/numerology",
     },
     {
       icon: Flower2,
       title: "Chakra Alignment",
-      description: "Balance your energy centers for emotional freedom, clarity, and alignment in all areas of life.",
+      description:
+        "Balance your energy centers for emotional freedom, clarity, and alignment in all areas of life.",
       href: "/services/chakra-alignment",
     },
-  ]
+  ];
 
   return (
     <div className="min-h-screen">
@@ -68,12 +74,16 @@ export default function HomePage() {
                 <span>Rooted in energy, Created with love </span>
               </div>
               <h1 className="text-5xl lg:text-6xl font-bold text-foreground text-balance animate-slide-in-left">
-                The Healing Bliss
+                Heal, Align. Radiate
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed text-pretty animate-slide-in-left animate-delay-100">
-               At Sunflowers, we offer a caring and supportive space to help you grow, realign, and reconnect with your true self. Inspired by the sunflower’s symbolism of growth and renewal, our healing philosophy focuses on balance, clarity, and transformation through holistic and energy-based practices, guiding you toward inner light and harmony.
-                   </p>
-
+                At Sunflowers, we offer a caring and supportive space to help
+                you grow, realign, and reconnect with your true self. Inspired
+                by the sunflower’s symbolism of growth and renewal, our healing
+                philosophy focuses on balance, clarity, and transformation
+                through holistic and energy-based practices, guiding you toward
+                inner light and harmony.
+              </p>
 
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-in animate-delay-200">
                 <Button
@@ -107,15 +117,18 @@ export default function HomePage() {
       {/* Services Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Our Healing Services</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4">
+            Our Healing Services
+          </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Discover a range of holistic healing modalities designed to support your journey to wellness.
+            Discover a range of holistic healing modalities designed to support
+            your journey to wellness.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => {
-            const Icon = service.icon
+            const Icon = service.icon;
             return (
               <Card
                 key={service.title}
@@ -125,8 +138,12 @@ export default function HomePage() {
                 <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <Icon className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">{service.title}</h3>
-                <p className="text-muted-foreground mb-4 leading-relaxed">{service.description}</p>
+                <h3 className="text-xl font-semibold text-foreground mb-2">
+                  {service.title}
+                </h3>
+                <p className="text-muted-foreground mb-4 leading-relaxed">
+                  {service.description}
+                </p>
                 <Link
                   href={service.href}
                   className="text-primary hover:text-primary/80 font-medium text-sm inline-flex items-center gap-1 hover:gap-2 transition-all"
@@ -134,7 +151,7 @@ export default function HomePage() {
                   Learn More →
                 </Link>
               </Card>
-            )
+            );
           })}
         </div>
       </section>
@@ -153,14 +170,17 @@ export default function HomePage() {
               </div>
             </div>
             <div className="animate-slide-in-right">
-              <h2 className="text-4xl font-bold text-foreground mb-6">Your Journey to Healing</h2>
+              <h2 className="text-4xl font-bold text-foreground mb-6">
+                Your Journey to Healing
+              </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                As a certified energy healer, I combine ancient wisdom with modern techniques to help you release
-                blockages, restore balance, and reconnect with your inner peace.
+                As a certified energy healer, I combine ancient wisdom with
+                modern techniques to help you release blockages, restore
+                balance, and reconnect with your inner peace.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Each session is tailored to your unique needs, creating a safe and nurturing space for transformation
-                and healing.
+                Each session is tailored to your unique needs, creating a safe
+                and nurturing space for transformation and healing.
               </p>
               <Button
                 asChild
@@ -178,9 +198,12 @@ export default function HomePage() {
       {/* CTA Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-12 text-center animate-scale-in">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Ready to Begin Your Healing Journey?</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4">
+            Ready to Begin Your Healing Journey?
+          </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto text-pretty">
-            Book your personalized healing session today and experience the transformative power of energy healing.
+            Book your personalized healing session today and experience the
+            transformative power of energy healing.
           </p>
           <Button
             asChild
@@ -194,5 +217,5 @@ export default function HomePage() {
 
       <Footer />
     </div>
-  )
+  );
 }
