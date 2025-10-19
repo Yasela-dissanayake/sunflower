@@ -121,7 +121,7 @@ export function Footer() {
                   href="mailto:info@sunflowershealing.com"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  info@sunflowershealing.com
+                  info@sunflowersholistic.com
                 </a>
               </li>
               <li className="flex items-start gap-2">

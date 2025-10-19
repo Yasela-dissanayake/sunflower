@@ -248,11 +248,11 @@ export default function ChakraAlignmentPage() {
               </Card>
             ))}
           </div>
-          <div className="mt-4">
+          <div className="mt-20 flex w-full justify-center">
             <img
-              src="/chakra-energy-centers-glowing-colorful-meditation.jpg"
+              src="/pendulum.png"
               alt="Chakra Alignment"
-              className="w-full h-full object-cover"
+              className="w-1/2 h-full object-cover rounded-2xl"
             />
           </div>
         </div>
