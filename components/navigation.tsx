@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Menu, X, Flower2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -50,26 +50,34 @@ export function Navigation() {
 
             {/* Services Dropdown */}
             <div
-              className="relative"
-              onMouseEnter={() => setServicesOpen(true)}
+              className="relative group"
               onMouseLeave={() => setServicesOpen(false)}
             >
-              <button className="text-foreground hover:text-primary transition-colors">
+              <button
+                className="text-foreground hover:text-primary transition-colors py-2"
+                onClick={() => setServicesOpen(!servicesOpen)}
+                onMouseEnter={() => setServicesOpen(true)}
+              >
                 Services
               </button>
-              {servicesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-64 bg-card border border-border rounded-lg shadow-lg py-2">
-                  {services.map((service) => (
-                    <Link
-                      key={service.href}
-                      href={service.href}
-                      className="block px-4 py-2 text-sm text-foreground hover:bg-secondary transition-colors"
-                    >
-                      {service.name}
-                    </Link>
-                  ))}
-                </div>
-              )}
+              <div
+                className={`absolute top-full left-0 w-64 bg-card border border-border rounded-lg shadow-lg py-2 transition-all duration-200 ${
+                  servicesOpen
+                    ? "opacity-100 translate-y-0 visible"
+                    : "opacity-0 -translate-y-2 invisible"
+                }`}
+                onMouseEnter={() => setServicesOpen(true)}
+              >
+                {services.map((service) => (
+                  <Link
+                    key={service.href}
+                    href={service.href}
+                    className="block px-4 py-2 text-sm text-foreground hover:bg-secondary transition-colors"
+                  >
+                    {service.name}
+                  </Link>
+                ))}
+              </div>
             </div>
 
             <Link
