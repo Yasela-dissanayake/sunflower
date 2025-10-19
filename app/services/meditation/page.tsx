@@ -54,7 +54,7 @@ export default function MeditationPage() {
             <div className="relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden">
                 <img
-                  src="/meditation-peaceful-mindfulness-serene-practice.jpg"
+                  src="/meditation.webp"
                   alt="Meditation"
                   className="w-full h-full object-cover"
                 />
