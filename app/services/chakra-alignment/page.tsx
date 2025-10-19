@@ -89,7 +89,7 @@ export default function ChakraAlignmentPage() {
             <div className="relative animate-fade-in-up animation-delay-200">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden">
                 <img
-                  src="/chakra-energy-centers-glowing-colorful-meditation.jpg"
+                  src="/chakra.webp"
                   alt="Chakra Alignment"
                   className="w-full h-full object-cover"
                 />

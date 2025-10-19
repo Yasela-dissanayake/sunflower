@@ -40,7 +40,7 @@ export default function AccessEnergyFaceliftPage() {
             <div className="relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden">
                 <img
-                  src="/energy-facelift-natural-beauty-glowing-skin.jpg"
+                  src="/facelift.webp"
                   alt="Access Energy Facelift"
                   className="w-full h-full object-cover"
                 />
