@@ -351,8 +351,6 @@ export default function ReikiPage() {
         </div>
       </section>
 
-   
-
       {/* CTA */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 animate-fade-in">
         <div className="bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-12 text-center">
@@ -491,19 +489,18 @@ export default function ReikiPage() {
         </div>
       </section>
 
-         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl p-12 animate-fade-in">
           {/* <h2 className="text-3xl font-bold text-foreground mb-8 text-center">The Five Reiki Principles</h2> */}
           <div className="max-w-3xl mx-auto space-y-6">
-         
-                <p className="text-lg text-foreground leading-relaxed italic  text-center">
-                  Just for today I will not worry <br />
-                  Just for today I will not angry <br />
-                  Just for today I will work honestly <br />
-                  Just for today I will give thanks for my many blessings <br />
-                  Just for today I will be kind to my neighbour and every living
-                  thing
-                </p>
+            <p className="text-lg text-foreground leading-relaxed italic  text-center">
+              Just for today I will not worry <br />
+              Just for today I will not angry <br />
+              Just for today I will work honestly <br />
+              Just for today I will give thanks for my many blessings <br />
+              Just for today I will be kind to my neighbour and every living
+              thing
+            </p>
           </div>
         </div>
       </section>
