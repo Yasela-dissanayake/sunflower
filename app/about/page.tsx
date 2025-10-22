@@ -136,6 +136,42 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Mission */}
+      <section className="bg-secondary/30 py-20">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-foreground mb-8 text-center">
+            My Mission
+          </h2>
+          <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+            <p className="text-xl font-semibold text-muted-foreground italic text-center py-4">
+              At Sunflowers, our mission is to spread awareness about the
+              transformative power of energy healing, showing how it empowers
+              individuals to nurture themselves and their loved ones. We guide
+              people to unlock their full potential, live with balance,
+              vitality, and inner strength, and embrace a life of holistic
+              wellness.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* My Vision */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 animate-fade-in">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-foreground mb-8 text-center">
+            My Vision
+          </h2>
+          <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+            <p className="text-xl font-semibold text-muted-foreground italic text-center py-4">
+              Our vision is to make energy healing accessible to all, creating a
+              safe and supportive space for every individual’s healing journey,
+              and fostering a connected, thriving community of wellness and
+              empowerment.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Certifications */}
       <section className="bg-secondary/30 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
