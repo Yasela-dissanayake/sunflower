@@ -140,7 +140,7 @@ export default function AboutPage() {
       <section className="bg-secondary/30 py-20">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold text-foreground mb-8 text-center">
-            My Mission
+            Mission
           </h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p className="text-xl font-semibold text-muted-foreground italic text-center py-4">
@@ -159,7 +159,7 @@ export default function AboutPage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 animate-fade-in">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold text-foreground mb-8 text-center">
-            My Vision
+            Vision
           </h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p className="text-xl font-semibold text-muted-foreground italic text-center py-4">

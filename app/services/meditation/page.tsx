@@ -6,15 +6,71 @@ import Link from "next/link";
 import { Wind, Sparkles } from "lucide-react";
 
 export default function MeditationPage() {
-  const meditationTypes = [
-    "Reiki Healing Meditation",
-    "Sound & Energy Healing Meditation",
-    "Chakra Balancing",
-    "Aura Cleansing",
-    "Emotional Cleansing",
-    "New Moon Meditation",
-    "Full Moon Meditation",
-    "Grounding Meditation",
+  const meditationTypes: {
+    title: string;
+    description: string;
+    image: string;
+  }[] = [
+    {
+      title: "Mindfulness meditation",
+      image: "/images/meditations/reiki-healing.webp",
+      description:
+        "A guided Reiki session to clear energetic blockages and restore natural energy flow.",
+    },
+    {
+      title: "Chakra Meditation",
+      image: "/images/meditations/sound-energy.webp",
+      description:
+        "Blending sound healing with guided visualization to harmonize body and subtle energy.",
+    },
+    {
+      title: "Mantra Meditation",
+      image: "/images/meditations/chakra-balancing.webp",
+      description:
+        "Focused meditations to align and balance the seven main energy centers.",
+    },
+    {
+      title: "Guided Meditation",
+      image: "/images/meditations/aura-cleansing.webp",
+      description:
+        "A calming practice to cleanse and strengthen your auric field.",
+    },
+    {
+      title: "Aura meditation",
+      image: "/aura-cleansing.png",
+      description:
+        "Gentle processes to release stored emotions and create inner space.",
+    },
+    {
+      title: "Full Moon Meditation",
+      image: "/images/meditations/new-moon.webp",
+      description:
+        "Intention-setting and renewal work designed for new moon energy.",
+    },
+    {
+      title: "Full Moon Meditation",
+      image: "/images/meditations/full-moon.webp",
+      description:
+        "A reflective practice to release and integrate under the full moon's power.",
+    },
+    {
+      title: "Grounding Meditation",
+      image: "/images/meditations/grounding.webp",
+      description:
+        "Techniques to anchor your energy, increase stability, and feel present.",
+    },
+    {
+      title: "Inner child healing Meditation",
+      image: "/images/meditations/grounding.webp",
+      description:
+        "Techniques to anchor your energy, increase stability, and feel present.",
+    },
+    {
+      title: "Sunflowers Grounding Meditation",
+      image: "/images/meditations/grounding.webp",
+      description:
+        "Techniques to anchor your energy, increase stability, and feel present.",
+    },
   ];
 
   const benefits = [
@@ -120,13 +176,32 @@ export default function MeditationPage() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
           {meditationTypes.map((type, index) => (
             <Card
-              key={type}
+              key={type.title}
               className="p-4 border-border text-center animate-slide-in-up hover:scale-105 transition-transform duration-300"
               style={{ animationDelay: `${index * 0.05}s` }}
             >
-              <p className="text-foreground font-medium">{type}</p>
+              <p className="text-foreground font-medium">{type.title}</p>
             </Card>
           ))}
+        </div>
+      </section>
+
+      <section className="bg-secondary/30 py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {benefits.map((benefit, index) => (
+              <Card
+                key={benefit}
+                className="p-6 border-border text-center animate-fade-in hover:scale-105 transition-transform duration-300"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <Sparkles className="h-8 w-8 text-primary mx-auto mb-3" />
+                <p className="text-foreground font-medium leading-relaxed">
+                  {benefit}
+                </p>
+              </Card>
+            ))}
+          </div>
         </div>
       </section>
 
