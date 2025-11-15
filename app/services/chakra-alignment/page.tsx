@@ -13,6 +13,7 @@ import {
   AlertCircle,
   ChevronDown,
   ChevronUp,
+  Flower2,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -62,12 +63,36 @@ export default function ChakraAlignmentPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 to-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <section className="relative overflow-hidden bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50">
+        <div className="absolute inset-0 opacity-10 pointer-events-none">
+          <svg className="w-full h-full" viewBox="0 0 400 400" fill="none">
+            <circle
+              cx="200"
+              cy="200"
+              r="80"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="text-amber-600"
+            />
+            {[...Array(12)].map((_, i) => (
+              <g key={i} transform={`rotate(${i * 30} 200 200)`}>
+                <ellipse
+                  cx="200"
+                  cy="80"
+                  rx="20"
+                  ry="40"
+                  fill="currentColor"
+                  className="text-amber-400 opacity-30"
+                />
+              </g>
+            ))}
+          </svg>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-up">
-              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm mb-6">
-                <Sparkles className="h-4 w-4" />
+              <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-900 px-4 py-2 rounded-full text-sm mb-6 font-medium">
+                <Flower2 className="h-4 w-4" />
                 <span>Energy Healing</span>
               </div>
               <h1 className="text-5xl font-bold text-foreground mb-6">
@@ -81,7 +106,7 @@ export default function ChakraAlignmentPage() {
               <Button
                 asChild
                 size="lg"
-                className="bg-primary text-primary-foreground hover:bg-primary/90"
+                className="bg-amber-500 text-white hover:bg-amber-600"
               >
                 <Link href="/contact">Book Complimentary Assessment</Link>
               </Button>
@@ -135,7 +160,7 @@ export default function ChakraAlignmentPage() {
       </section>
 
       {/* What Blocks Your Energy */}
-      <section className="bg-secondary/30 py-20">
+      <section className="bg-gradient-to-r from-amber-50 to-yellow-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-4xl font-bold text-foreground mb-4">
@@ -150,11 +175,11 @@ export default function ChakraAlignmentPage() {
             {blockages.map((blockage, index) => (
               <Card
                 key={blockage}
-                className="p-6 border-border animate-fade-in-up hover:scale-105 transition-transform duration-300"
+                className="p-6 border-amber-200 bg-white/80 animate-fade-in-up hover:scale-105 transition-transform duration-300 hover:shadow-lg hover:border-amber-400"
                 style={{ animationDelay: `${index * 50}ms` }}
               >
                 <div className="flex items-start gap-3">
-                  <AlertCircle className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
+                  <AlertCircle className="h-6 w-6 text-amber-600 flex-shrink-0 mt-1" />
                   <p className="text-foreground leading-relaxed">{blockage}</p>
                 </div>
               </Card>
@@ -178,11 +203,11 @@ export default function ChakraAlignmentPage() {
           {visibleBenefits.map((benefit, index) => (
             <Card
               key={benefit}
-              className="p-6 border-border animate-fade-in-up hover:scale-105 transition-transform duration-300"
+              className="p-6 border-amber-200 bg-white/80 animate-fade-in-up hover:scale-105 transition-transform duration-300 hover:shadow-lg hover:border-amber-400"
               style={{ animationDelay: `${index * 50}ms` }}
             >
               <div className="flex items-start gap-3">
-                <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                <CheckCircle className="h-6 w-6 text-amber-500 flex-shrink-0 mt-1" />
                 <p className="text-foreground leading-relaxed">{benefit}</p>
               </div>
             </Card>
@@ -192,7 +217,7 @@ export default function ChakraAlignmentPage() {
           <Button
             variant="outline"
             onClick={() => setShowAllBenefits(!showAllBenefits)}
-            className="flex items-center gap-2"
+            className="flex items-center gap-2 border-amber-300 text-amber-700 hover:bg-amber-50"
           >
             {showAllBenefits ? (
               <>
@@ -208,7 +233,7 @@ export default function ChakraAlignmentPage() {
       </section>
 
       {/* Session Details */}
-      <section className="bg-secondary/30 py-20">
+      <section className="bg-gradient-to-r from-amber-50 to-yellow-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-foreground mb-12 text-center animate-fade-in">
             Curious About Your Chakras?
@@ -233,11 +258,11 @@ export default function ChakraAlignmentPage() {
             ].map((item, index) => (
               <Card
                 key={item.title}
-                className="p-8 text-center border-border animate-fade-in-up hover:scale-105 transition-transform duration-300"
+                className="p-8 text-center border-amber-200 bg-white/80 animate-fade-in-up hover:scale-105 transition-all duration-300 hover:shadow-lg hover:border-amber-400"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
-                <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <item.icon className="h-8 w-8 text-primary" />
+                <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <item.icon className="h-8 w-8 text-amber-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-3">
                   {item.title}
@@ -260,7 +285,7 @@ export default function ChakraAlignmentPage() {
 
       {/* CTA */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 animate-fade-in">
-        <div className="bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-12 text-center">
+        <div className="bg-gradient-to-br from-amber-100 via-yellow-50 to-orange-100 rounded-2xl p-12 text-center">
           <h2 className="text-4xl font-bold text-foreground mb-4">
             Book your Complimentary Chakra Assessment Now!
           </h2>
@@ -272,7 +297,7 @@ export default function ChakraAlignmentPage() {
           <Button
             asChild
             size="lg"
-            className="bg-primary text-primary-foreground hover:bg-primary/90"
+            className="bg-amber-500 text-white hover:bg-amber-600"
           >
             <Link href="/contact">Book Your Free Assessment</Link>
           </Button>

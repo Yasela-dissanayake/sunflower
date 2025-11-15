@@ -14,6 +14,7 @@ import {
   HelpCircle,
   ChevronDown,
   ChevronUp,
+  Flower2,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -86,12 +87,22 @@ export default function ReikiPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 to-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <section className="relative overflow-hidden bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50">
+        <div className="absolute inset-0 opacity-10 pointer-events-none">
+          <svg className="w-full h-full" viewBox="0 0 400 400" fill="none">
+            <circle cx="200" cy="200" r="80" stroke="currentColor" strokeWidth="2" className="text-amber-600"/>
+            {[...Array(12)].map((_, i) => (
+              <g key={i} transform={`rotate(${i * 30} 200 200)`}>
+                <ellipse cx="200" cy="80" rx="20" ry="40" fill="currentColor" className="text-amber-400 opacity-30"/>
+              </g>
+            ))}
+          </svg>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-up">
-              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm mb-6">
-                <Heart className="h-4 w-4" />
+              <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-900 px-4 py-2 rounded-full text-sm mb-6 font-medium">
+                <Flower2 className="h-4 w-4" />
                 <span>Embracing balance</span>
               </div>
               <h1 className="text-5xl font-bold text-foreground mb-6">
@@ -104,7 +115,7 @@ export default function ReikiPage() {
               <Button
                 asChild
                 size="lg"
-                className="bg-primary text-primary-foreground hover:bg-primary/90"
+                className="bg-amber-500 text-white hover:bg-amber-600"
               >
                 <Link href="/contact">Book a Reiki Session</Link>
               </Button>
@@ -151,7 +162,7 @@ export default function ReikiPage() {
       </section>
 
       {/* Benefits */}
-      <section className="bg-secondary/30 py-20">
+      <section className="bg-gradient-to-r from-amber-50 to-yellow-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-4xl font-bold text-foreground mb-4">
@@ -167,11 +178,11 @@ export default function ReikiPage() {
               (benefit, index) => (
                 <Card
                   key={benefit}
-                  className="p-6 border-border animate-fade-in-up hover:scale-105 transition-transform duration-300"
+                  className="p-6 border-amber-200 bg-white/80 animate-fade-in-up hover:scale-105 transition-all duration-300 hover:shadow-lg hover:border-amber-400"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                    <CheckCircle className="h-6 w-6 text-amber-500 flex-shrink-0 mt-1" />
                     <p className="text-foreground leading-relaxed">{benefit}</p>
                   </div>
                 </Card>
@@ -182,7 +193,7 @@ export default function ReikiPage() {
             <Button
               variant="outline"
               onClick={() => setShowAllBenefits(!showAllBenefits)}
-              className="flex items-center gap-2"
+              className="flex items-center gap-2 border-amber-300 text-amber-700 hover:bg-amber-50"
             >
               {showAllBenefits ? (
                 <>
