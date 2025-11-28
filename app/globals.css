@@ -130,6 +130,15 @@
   }
   body {
     @apply bg-background text-foreground;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32"><defs><linearGradient id="petalGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:%23FFD700;stop-opacity:1" /><stop offset="100%" style="stop-color:%23FFA500;stop-opacity:1" /></linearGradient><linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23654321;stop-opacity:1" /><stop offset="100%" style="stop-color:%233D2817;stop-opacity:1" /></linearGradient></defs><g transform="translate(32,32)"><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(0)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(30)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(60)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(90)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(120)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(150)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(180)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(210)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(240)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(270)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(300)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(330)"/><circle cx="0" cy="0" r="8" fill="url(%23centerGrad)"/><circle cx="0" cy="0" r="6" fill="%23D2B48C" opacity="0.8"/></g></svg>')
+        16 16,
+      auto;
+  }
+  a,
+  button {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32"><defs><linearGradient id="petalGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:%23FFD700;stop-opacity:1" /><stop offset="100%" style="stop-color:%23FFA500;stop-opacity:1" /></linearGradient><linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23654321;stop-opacity:1" /><stop offset="100%" style="stop-color:%233D2817;stop-opacity:1" /></linearGradient></defs><g transform="translate(32,32)"><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(0)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(30)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(60)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(90)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(120)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(150)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(180)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(210)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(240)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(270)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(300)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(330)"/><circle cx="0" cy="0" r="8" fill="url(%23centerGrad)"/><circle cx="0" cy="0" r="6" fill="%23D2B48C" opacity="0.8"/></g></svg>')
+        16 16,
+      pointer;
   }
 }
 
@@ -193,24 +202,197 @@
     }
   }
 
+  /* Pulse animation */
+  @keyframes pulse {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+
+  /* Glow animation */
+  @keyframes glow {
+    0%,
+    100% {
+      box-shadow: 0 0 5px rgba(196, 167, 71, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(196, 167, 71, 0.6);
+    }
+  }
+
+  /* Shimmer animation */
+  @keyframes shimmer {
+    0% {
+      background-position: -1000px 0;
+    }
+    100% {
+      background-position: 1000px 0;
+    }
+  }
+
+  /* Rotate animation */
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Bounce up animation */
+  @keyframes bounceUp {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  /* Slide up animation */
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Slide down animation */
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Flip animation */
+  @keyframes flip {
+    0% {
+      transform: perspective(400px) rotateY(0);
+    }
+    100% {
+      transform: perspective(400px) rotateY(360deg);
+    }
+  }
+
+  /* Wobble animation */
+  @keyframes wobble {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-5px) rotate(-1deg);
+    }
+    50% {
+      transform: translateX(5px) rotate(1deg);
+    }
+    75% {
+      transform: translateX(-5px) rotate(-1deg);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  /* Heartbeat animation */
+  @keyframes heartbeat {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(1);
+    }
+  }
+
   .animate-fade-in {
     animation: fadeIn 0.6s ease-out forwards;
+    opacity: 0;
   }
 
   .animate-slide-in-left {
     animation: slideInLeft 0.6s ease-out forwards;
+    opacity: 0;
   }
 
   .animate-slide-in-right {
     animation: slideInRight 0.6s ease-out forwards;
+    opacity: 0;
   }
 
   .animate-scale-in {
     animation: scaleIn 0.5s ease-out forwards;
+    opacity: 0;
   }
 
   .animate-float {
     animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-pulse-subtle {
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite;
+  }
+
+  .animate-shimmer {
+    animation: shimmer 3s infinite;
+    background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-size: 1000px 100%;
+  }
+
+  .animate-rotate {
+    animation: rotate 4s linear infinite;
+  }
+
+  .animate-bounce-up {
+    animation: bounceUp 2s ease-in-out infinite;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+    opacity: 0;
+  }
+
+  .animate-slide-down {
+    animation: slideDown 0.6s ease-out forwards;
+    opacity: 0;
+  }
+
+  .animate-flip {
+    animation: flip 0.6s ease-out;
+  }
+
+  .animate-wobble {
+    animation: wobble 0.5s ease-in-out;
+  }
+
+  .animate-heartbeat {
+    animation: heartbeat 1.3s ease-in-out infinite;
   }
 
   /* Stagger animation delays */
@@ -236,5 +418,21 @@
 
   .animate-delay-600 {
     animation-delay: 600ms;
+  }
+
+  .animate-delay-700 {
+    animation-delay: 700ms;
+  }
+
+  .animate-delay-800 {
+    animation-delay: 800ms;
+  }
+
+  .animate-delay-900 {
+    animation-delay: 900ms;
+  }
+
+  .animate-delay-1000 {
+    animation-delay: 1000ms;
   }
 }
