@@ -194,32 +194,34 @@ export default function HomePage() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => {
             const Icon = service.icon;
+            const isLast = index === services.length - 1;
             return (
-              <ScrollAnimation
-                key={service.title}
-                animation="slide-up"
-                delay={index * 100}
+              <div key={service.title} className={isLast ? "lg:col-start-2" : ""}>
+          <ScrollAnimation
+            animation="slide-up"
+            delay={index * 100}
+          >
+            <Card
+              className="p-6 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-border group cursor-pointer hover:animate-glow h-full flex flex-col items-center text-center"
+            >
+              <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 group-hover:scale-125 transition-all duration-300 group-hover:rotate-6">
+                <Icon className="h-6 w-6 text-primary group-hover:text-primary/90 transition-colors group-hover:animate-heartbeat" />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
+                {service.title}
+              </h3>
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                {service.description}
+              </p>
+              <Link
+                href={service.href}
+                className="text-primary hover:text-primary/80 font-medium text-sm inline-flex items-center gap-1 justify-center transition-all"
               >
-                <Card
-                  className="p-6 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-border group cursor-pointer hover:animate-glow h-full"
-                >
-                  <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 group-hover:scale-125 transition-all duration-300 group-hover:rotate-6">
-                    <Icon className="h-6 w-6 text-primary group-hover:text-primary/90 transition-colors group-hover:animate-heartbeat" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
-                    {service.title}
-                  </h3>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
-                    {service.description}
-                  </p>
-                  <Link
-                    href={service.href}
-                    className="text-primary hover:text-primary/80 font-medium text-sm inline-flex items-center gap-1 hover:gap-2 transition-all group-hover:translate-x-2"
-                  >
-                    Learn More →
-                  </Link>
-                </Card>
-              </ScrollAnimation>
+                Learn More →
+              </Link>
+            </Card>
+          </ScrollAnimation>
+              </div>
             );
           })}
         </div>
