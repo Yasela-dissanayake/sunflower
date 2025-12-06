@@ -76,22 +76,22 @@ export default function HomePage() {
     {
       icon: Zap,
       title: "Stress Relief",
-      description: "Release tension and find deep relaxation",
+      // description: "Release tension and find deep relaxation",
     },
     {
       icon: Lightbulb,
       title: "Clarity & Purpose",
-      description: "Discover your path forward with confidence",
+      // description: "Discover your path forward with confidence",
     },
     {
       icon: CheckCircle,
       title: "Emotional Balance",
-      description: "Heal past patterns and find inner peace",
+      // description: "Heal past patterns and find inner peace",
     },
     {
       icon: Star,
       title: "Energy Renewal",
-      description: "Revitalize your spirit and vitality",
+      // description: "Revitalize your spirit and vitality",
     },
   ];
 
@@ -185,8 +185,8 @@ export default function HomePage() {
               Our Healing Services
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-              Discover a range of holistic healing modalities designed to support
-              your journey to wellness.
+              Discover a range of holistic healing modalities designed to
+              support your journey to wellness.
             </p>
           </div>
         </ScrollAnimation>
@@ -196,31 +196,29 @@ export default function HomePage() {
             const Icon = service.icon;
             const isLast = index === services.length - 1;
             return (
-              <div key={service.title} className={isLast ? "lg:col-start-2" : ""}>
-          <ScrollAnimation
-            animation="slide-up"
-            delay={index * 100}
-          >
-            <Card
-              className="p-6 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-border group cursor-pointer hover:animate-glow h-full flex flex-col items-center text-center"
-            >
-              <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 group-hover:scale-125 transition-all duration-300 group-hover:rotate-6">
-                <Icon className="h-6 w-6 text-primary group-hover:text-primary/90 transition-colors group-hover:animate-heartbeat" />
-              </div>
-              <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
-                {service.title}
-              </h3>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                {service.description}
-              </p>
-              <Link
-                href={service.href}
-                className="text-primary hover:text-primary/80 font-medium text-sm inline-flex items-center gap-1 justify-center transition-all"
+              <div
+                key={service.title}
+                className={isLast ? "lg:col-start-2" : ""}
               >
-                Learn More →
-              </Link>
-            </Card>
-          </ScrollAnimation>
+                <ScrollAnimation animation="slide-up" delay={index * 100}>
+                  <Card className="p-6 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-border group cursor-pointer hover:animate-glow h-full flex flex-col items-center text-center">
+                    <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 group-hover:scale-125 transition-all duration-300 group-hover:rotate-6">
+                      <Icon className="h-6 w-6 text-primary group-hover:text-primary/90 transition-colors group-hover:animate-heartbeat" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-muted-foreground mb-4 leading-relaxed">
+                      {service.description}
+                    </p>
+                    <Link
+                      href={service.href}
+                      className="text-primary hover:text-primary/80 font-medium text-sm inline-flex items-center gap-1 justify-center transition-all"
+                    >
+                      Learn More →
+                    </Link>
+                  </Card>
+                </ScrollAnimation>
               </div>
             );
           })}
@@ -249,18 +247,16 @@ export default function HomePage() {
                 animation="slide-up"
                 delay={index * 100}
               >
-                <div
-                  className="text-center p-8 rounded-xl bg-gradient-to-br from-primary/5 to-accent/5 hover:from-primary/10 hover:to-accent/10 transition-all duration-300 border border-primary/10 hover:scale-105 hover:shadow-lg group cursor-pointer h-full"
-                >
+                <div className="text-center p-8 rounded-xl bg-gradient-to-br from-primary/5 to-accent/5 hover:from-primary/10 hover:to-accent/10 transition-all duration-300 border border-primary/10 hover:scale-105 hover:shadow-lg group cursor-pointer h-full">
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/20 mb-4 group-hover:scale-125 transition-all duration-300 group-hover:animate-rotate">
                     <Icon className="h-8 w-8 text-primary group-hover:animate-pulse-subtle" />
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
                     {benefit.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground group-hover:text-muted-foreground/80">
+                  {/* <p className="text-sm text-muted-foreground group-hover:text-muted-foreground/80">
                     {benefit.description}
-                  </p>
+                  </p> */}
                 </div>
               </ScrollAnimation>
             );
@@ -341,9 +337,7 @@ export default function HomePage() {
               animation="slide-up"
               delay={index * 100}
             >
-              <Card
-                className="p-6 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-border bg-gradient-to-br from-card to-card/80 group hover:scale-105 h-full"
-              >
+              <Card className="p-6 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-border bg-gradient-to-br from-card to-card/80 group hover:scale-105 h-full">
                 <div className="flex gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star
@@ -388,9 +382,9 @@ export default function HomePage() {
                 Ready to Begin Your Healing Journey?
               </h2>
               <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto text-pretty">
-                Take the first step toward transformation. Book your personalized
-                healing session today and experience the profound shift in your
-                energy and well-being.
+                Take the first step toward transformation. Book your
+                personalized healing session today and experience the profound
+                shift in your energy and well-being.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button

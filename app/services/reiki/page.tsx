@@ -360,7 +360,8 @@ export default function ReikiPage() {
           <div className="space-y-4 mb-8">
             <p className="text-xl text-muted-foreground leading-relaxed">
               Bring your open mind and heart, just relax and allow yourself to
-              receive the energy
+              receive the energy. Book your Reiki healing session and begin your
+              journey to balance and wellness.
             </p>
             <p className="text-xl text-muted-foreground leading-relaxed font-semibold">
               Trust the process
@@ -371,13 +372,20 @@ export default function ReikiPage() {
             size="lg"
             className="bg-primary text-primary-foreground hover:bg-primary/90"
           >
-            <Link href="/contact">Experience Reiki Journey Now</Link>
+            <Link href="/contact">Schedule Your Session</Link>
           </Button>
+          {/* <Button
+            asChild
+            size="lg"
+            className="bg-primary text-primary-foreground hover:bg-primary/90"
+          >
+            <Link href="/contact">Experience Reiki Journey Now</Link>
+          </Button> */}
         </div>
       </section>
 
       {/* CTA */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 animate-fade-in">
+      {/* <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 animate-fade-in">
         <div className="bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-12 text-center">
           <h2 className="text-4xl font-bold text-foreground mb-4">
             Ready to Experience Reiki?
@@ -394,7 +402,7 @@ export default function ReikiPage() {
             <Link href="/contact">Schedule Your Session</Link>
           </Button>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
