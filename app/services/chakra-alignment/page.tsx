@@ -223,7 +223,7 @@ export default function ChakraAlignmentPage() {
               {
                 icon: Users,
                 title: "Personalized Healing",
-                desc: "Our intention is to empower you to heal, grow, and transform your life",
+                desc: "My intention is to empower you to heal, grow, and transform your life",
               },
               {
                 icon: Clock,
