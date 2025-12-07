@@ -125,7 +125,7 @@ export default function ChakraAlignmentPage() {
             <p className="text-muted-foreground leading-relaxed">
               Balancing these energy centers through practices such as
               meditation, yoga, energy work, crystal healing, color
-              visualization, mantras, Reiki, sound healing, affirmations, and
+              visualization, mantra chanting, Reiki, sound healing, affirmations, and
               focused meditation can restore harmony. This process enhances your
               ability to manifest goals and live with greater intention and
               purpose.
