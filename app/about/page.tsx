@@ -163,7 +163,7 @@ export default function AboutPage() {
           </h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p className="text-xl font-semibold text-muted-foreground italic text-center py-4">
-              Our vision is to make energy healing accessible to all, creating a
+              My mission and My vision is to make energy healing accessible to all, creating a
               safe and supportive space for every individual’s healing journey,
               and fostering a connected, thriving community of wellness and
               empowerment.
