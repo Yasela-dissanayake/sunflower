@@ -108,7 +108,7 @@ export default function AboutPage() {
           </h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p className="text-xl font-semibold text-muted-foreground italic text-center py-4">
-              At Sunflowers, our mission is to spread awareness about the
+              At Sunflowers, my mission is to spread awareness about the
               transformative power of energy healing, showing how it empowers
               individuals to nurture themselves and their loved ones. We guide
               people to unlock their full potential, live with balance,
@@ -127,7 +127,7 @@ export default function AboutPage() {
           </h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p className="text-xl font-semibold text-muted-foreground italic text-center py-4">
-              My mission and My vision is to make energy healing accessible to all, creating a
+              My vision is to make energy healing accessible to all, creating a
               safe and supportive space for every individual’s healing journey,
               and fostering a connected, thriving community of wellness and
               empowerment.
