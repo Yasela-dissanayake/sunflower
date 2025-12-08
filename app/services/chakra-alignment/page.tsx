@@ -262,7 +262,7 @@ export default function ChakraAlignmentPage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 animate-fade-in">
         <div className="bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-12 text-center">
           <h2 className="text-4xl font-bold text-foreground mb-4">
-            Book your Complimentary Chakra Assessment Now!
+            Get your Complimentary Chakra Assessment!
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             Experience greater clarity, vitality, and alignment in all areas of
