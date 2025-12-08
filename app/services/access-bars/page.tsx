@@ -71,7 +71,7 @@ export default function AccessBarsPage() {
           </div>
 
           <h2 className="text-4xl font-bold text-foreground mb-6">
-            What are the Access Bars?
+            What is Access Bars?
           </h2>
           <div className="prose prose-lg max-w-none">
             <p className="text-muted-foreground leading-relaxed mb-4">

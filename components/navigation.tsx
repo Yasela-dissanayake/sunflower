@@ -13,7 +13,7 @@ const services = [
   { name: "Meditation", href: "/services/meditation" },
   { name: "Numerology", href: "/services/numerology" },
   { name: "Karmic Numerology", href: "/services/karmic-numerology" },
-  { name: "Chakra Diagnosis & Alignment", href: "/services/chakra-alignment" },
+  { name: "Assessment & Alignment", href: "/services/chakra-alignment" },
 ];
 
 export function Navigation() {

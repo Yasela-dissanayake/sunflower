@@ -192,7 +192,7 @@ export default function NumerologyPage() {
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-12 text-center">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Ready to Discover Your Numbers?</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4">Discover the Numbers that define your Journey</h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             Unlock the wisdom of numerology and gain clarity on your life's path and purpose.
           </p>

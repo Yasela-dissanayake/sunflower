@@ -359,7 +359,7 @@ export default function ReikiPage() {
           </h2>
           <div className="space-y-4 mb-8">
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Bring your open mind and heart, just relax and allow yourself to
+              Bring an open mind and heart, just relax and allow yourself to
               receive the energy. Book your Reiki healing session and begin your
               journey to balance and wellness.
             </p>

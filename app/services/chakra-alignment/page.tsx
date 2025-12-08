@@ -54,7 +54,8 @@ export default function ChakraAlignmentPage() {
     "Depression",
     "Migraines",
     "fatigue, tension, or emotional overwhelm",
-    "Unprocessed emotions, stress, and energetic blocks",
+    "Unprocessed emotions",
+    ,"stress",
   ];
 
   return (
@@ -125,7 +126,7 @@ export default function ChakraAlignmentPage() {
             <p className="text-muted-foreground leading-relaxed">
               Balancing these energy centers through practices such as
               meditation, yoga, energy work, crystal healing, color
-              visualization, mantras, Reiki, sound healing, affirmations, and
+              visualization, mantra chanting, Reiki, sound healing, affirmations, and
               focused meditation can restore harmony. This process enhances your
               ability to manifest goals and live with greater intention and
               purpose.
@@ -223,7 +224,7 @@ export default function ChakraAlignmentPage() {
               {
                 icon: Users,
                 title: "Personalized Healing",
-                desc: "Our intention is to empower you to heal, grow, and transform your life",
+                desc: "My intention is to empower you to heal, grow, and transform your life",
               },
               {
                 icon: Clock,
@@ -262,7 +263,7 @@ export default function ChakraAlignmentPage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 animate-fade-in">
         <div className="bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-12 text-center">
           <h2 className="text-4xl font-bold text-foreground mb-4">
-            Book your Complimentary Chakra Assessment Now!
+            Get your Complimentary Chakra Assessment!
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             Experience greater clarity, vitality, and alignment in all areas of

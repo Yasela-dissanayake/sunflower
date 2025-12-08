@@ -298,9 +298,6 @@ export default function PricingPage() {
             <h2 className="text-4xl font-bold text-foreground mb-4">
               Client Testimonials
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Real experiences from real people on their healing journeys
-            </p>
           </div>
 
           <div className="px-12">
