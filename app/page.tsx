@@ -136,6 +136,9 @@ export default function HomePage() {
               <h1 className="text-5xl lg:text-6xl font-bold text-foreground text-balance animate-slide-in-left">
                 Heal, Align. Radiate
               </h1>
+              <p className="text-2xl text-primary font-medium italic animate-slide-in-left animate-delay-50">
+                Like sunflowers turning toward the light, we too can rise, heal, and bloom.
+              </p>
               <p className="text-xl text-muted-foreground leading-relaxed text-pretty animate-slide-in-left animate-delay-100">
                 At Sunflowers, we provide a supportive space to help you grow
                 and reconnect with your true self. Inspired by the sunflower’s
