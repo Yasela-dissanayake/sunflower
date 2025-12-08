@@ -54,7 +54,8 @@ export default function ChakraAlignmentPage() {
     "Depression",
     "Migraines",
     "fatigue, tension, or emotional overwhelm",
-    "Unprocessed emotions, stress, and energetic blocks",
+    "Unprocessed emotions",
+    ,"stress",
   ];
 
   return (
