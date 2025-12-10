@@ -5,82 +5,82 @@
 
 /* Earthy, calm color palette for Sunflowers healing brand */
 :root {
-  /* Primary earthy tones - easy to change globally */
-  --healing-sage: oklch(0.75 0.08 145); /* Soft sage green */
-  --healing-terracotta: oklch(0.65 0.12 45); /* Warm terracotta */
-  --healing-sand: oklch(0.92 0.02 75); /* Light sand beige */
-  --healing-earth: oklch(0.45 0.06 65); /* Deep earth brown */
-  --healing-cream: oklch(0.97 0.01 85); /* Warm cream */
+   /* Primary bright and neutral tones */
+  --healing-sun: #FFE066;     /* Bright Sun Yellow */
+  --healing-sky: #85C1E9;     /* Bright Sky Blue */
+  --healing-sand: #FCF6F5;    /* Soft Neutral Sand */
+  --healing-graphite: #333842;/* Neutral Graphite */
+  --healing-cloud: #F8F9FA;   /* Off-white */
 
-  /* Semantic tokens using healing colors */
-  --background: var(--healing-cream);
-  --foreground: var(--healing-earth);
-  --card: oklch(1 0 0);
-  --card-foreground: var(--healing-earth);
-  --popover: oklch(1 0 0);
-  --popover-foreground: var(--healing-earth);
-  --primary: var(--healing-sage);
-  --primary-foreground: oklch(0.98 0 0);
-  --secondary: var(--healing-sand);
-  --secondary-foreground: var(--healing-earth);
+  /* Semantic tokens using new colors */
+  --background: var(--healing-cloud);
+  --foreground: var(--healing-graphite);
+  --card: #FFFFFF;
+  --card-foreground: var(--healing-graphite);
+  --popover: #FFFFFF;
+  --popover-foreground: var(--healing-graphite);
+  --primary: var(--healing-sun);
+  --primary-foreground: var(--healing-graphite);
+  --secondary: var(--healing-sky);
+  --secondary-foreground: var(--healing-graphite);
   --muted: var(--healing-sand);
-  --muted-foreground: oklch(0.55 0.04 65);
-  --accent: var(--healing-terracotta);
-  --accent-foreground: oklch(0.98 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.88 0.02 75);
-  --input: oklch(0.88 0.02 75);
-  --ring: var(--healing-sage);
-  --chart-1: var(--healing-sage);
-  --chart-2: var(--healing-terracotta);
+  --muted-foreground: #7A7C81; /* Neutral muted gray */
+  --accent: #FFAC81;      /* Bright coral orange accent */
+  --accent-foreground: var(--healing-graphite);
+  --destructive: #F44336; /* Bright red */
+  --destructive-foreground: #FFF;
+  --border: #E5E7EB;      /* Light neutral border */
+  --input: #E5E7EB;
+  --ring: var(--healing-sun);
+  --chart-1: var(--healing-sun);
+  --chart-2: var(--healing-sky);
   --chart-3: var(--healing-sand);
-  --chart-4: var(--healing-earth);
-  --chart-5: oklch(0.82 0.06 155);
+  --chart-4: var(--healing-graphite);
+  --chart-5: #7DF9FF;     /* Neon Blue Accent */
   --radius: 0.75rem;
-  --sidebar: var(--healing-cream);
-  --sidebar-foreground: var(--healing-earth);
-  --sidebar-primary: var(--healing-sage);
-  --sidebar-primary-foreground: oklch(0.98 0 0);
-  --sidebar-accent: var(--healing-sand);
-  --sidebar-accent-foreground: var(--healing-earth);
-  --sidebar-border: oklch(0.88 0.02 75);
-  --sidebar-ring: var(--healing-sage);
+  --sidebar: var(--healing-cloud);
+  --sidebar-foreground: var(--healing-graphite);
+  --sidebar-primary: var(--healing-sun);
+  --sidebar-primary-foreground: var(--healing-graphite);
+  --sidebar-accent: var(--healing-sky);
+  --sidebar-accent-foreground: var(--healing-graphite);
+  --sidebar-border: #E5E7EB;
+  --sidebar-ring: var(--healing-sun);
 }
 
 .dark {
-  --background: oklch(0.22 0.02 65);
-  --foreground: var(--healing-cream);
-  --card: oklch(0.25 0.02 65);
-  --card-foreground: var(--healing-cream);
-  --popover: oklch(0.25 0.02 65);
-  --popover-foreground: var(--healing-cream);
-  --primary: var(--healing-sage);
-  --primary-foreground: oklch(0.98 0 0);
-  --secondary: oklch(0.32 0.03 65);
-  --secondary-foreground: var(--healing-cream);
-  --muted: oklch(0.32 0.03 65);
-  --muted-foreground: oklch(0.72 0.04 75);
-  --accent: var(--healing-terracotta);
-  --accent-foreground: oklch(0.98 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.32 0.03 65);
-  --input: oklch(0.32 0.03 65);
-  --ring: var(--healing-sage);
-  --chart-1: var(--healing-sage);
-  --chart-2: var(--healing-terracotta);
+  --background: #181B23;
+  --foreground: var(--healing-cloud);
+  --card: #22242C;
+  --card-foreground: var(--healing-cloud);
+  --popover: #22242C;
+  --popover-foreground: var(--healing-cloud);
+  --primary: var(--healing-sun);
+  --primary-foreground: #302C38;
+  --secondary: #258DC8;            /* Deeper but still bright blue */
+  --secondary-foreground: var(--healing-cloud);
+  --muted: #23252D;
+  --muted-foreground: #ABB2BF;
+  --accent: #FFAC81;
+  --accent-foreground: #23252D;
+  --destructive: #F44336;
+  --destructive-foreground: #FFF;
+  --border: #23252D;
+  --input: #23252D;
+  --ring: var(--healing-sun);
+  --chart-1: var(--healing-sun);
+  --chart-2: var(--healing-sky);
   --chart-3: var(--healing-sand);
-  --chart-4: var(--healing-earth);
-  --chart-5: oklch(0.82 0.06 155);
-  --sidebar: oklch(0.25 0.02 65);
-  --sidebar-foreground: var(--healing-cream);
-  --sidebar-primary: var(--healing-sage);
-  --sidebar-primary-foreground: oklch(0.98 0 0);
-  --sidebar-accent: oklch(0.32 0.03 65);
-  --sidebar-accent-foreground: var(--healing-cream);
-  --sidebar-border: oklch(0.32 0.03 65);
-  --sidebar-ring: var(--healing-sage);
+  --chart-4: var(--healing-cloud);
+  --chart-5: #7DF9FF;
+  --sidebar: #181B23;
+  --sidebar-foreground: var(--healing-cloud);
+  --sidebar-primary: var(--healing-sun);
+  --sidebar-primary-foreground: #23252D;
+  --sidebar-accent: #258DC8;
+  --sidebar-accent-foreground: var(--healing-cloud);
+  --sidebar-border: #23252D;
+  --sidebar-ring: var(--healing-sun);
 }
 
 @theme inline {
