@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { Heart, Flower2, Brain, Sparkles, Music, Wind, Star, Zap, Lightbulb, CheckCircle, X } from 'lucide-react';
+"use client";
+
+import React from 'react';
+import { Heart, Flower2, Brain, Sparkles, Music, Wind, Star } from 'lucide-react';
 
 export default function HomePage() {
-  const [showModal, setShowModal] = useState(true);
-
   const services = [
     {
       icon: Heart,
@@ -74,34 +74,6 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Single Image Modal on Load */}
-      {showModal && (
-        <div 
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 cursor-pointer"
-          onClick={() => setShowModal(false)}
-        >
-          <button
-            onClick={() => setShowModal(false)}
-            className="absolute top-8 right-8 text-white hover:text-gray-300 transition-colors z-10"
-          >
-            <X className="w-8 h-8" />
-          </button>
-          <div className="relative w-full h-full flex items-center justify-center p-4">
-            <img
-              src="/Shaista-3.jpg"
-              alt="Welcome to Sunflowers"
-              className="max-w-4xl max-h-[90vh] w-auto h-auto object-contain"
-            />
-          </div>
-          <button
-            onClick={() => setShowModal(false)}
-            className="absolute bottom-8 text-white text-sm hover:text-gray-300 transition-colors"
-          >
-            Click anywhere to enter
-          </button>
-        </div>
-      )}
-
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-40">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
@@ -110,7 +82,6 @@ export default function HomePage() {
             <span className="text-xl font-serif font-semibold">Sunflowers</span>
           </div>
           <div className="hidden md:flex gap-8 text-sm">
-            <a href="#about" className="hover:text-amber-600 transition-colors">About</a>
             <a href="#services" className="hover:text-amber-600 transition-colors">Services</a>
             <a href="#testimonials" className="hover:text-amber-600 transition-colors">Testimonials</a>
             <a href="#contact" className="hover:text-amber-600 transition-colors">Contact</a>
@@ -121,27 +92,40 @@ export default function HomePage() {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-amber-50 text-amber-700 px-4 py-2 rounded-full text-sm mb-6">
-            <Flower2 className="h-4 w-4" />
-            <span>Rooted in energy, Created with love</span>
+      {/* Hero Section with Full Background Image */}
+      <section className="relative h-screen flex items-center">
+        {/* Background Image */}
+        <div
+            className="absolute inset-0 z-0 bg-no-repeat bg-contain"
+            style={{
+              backgroundImage: "url('/Shaista-3.jpg')",
+              backgroundPosition: "70% center",
+            }}
+        >
+         
+          {/* Sunflower Golden Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-yellow-600/20 via-orange-500/15 to-orange-800/25">
           </div>
-          <h1 className="text-6xl md:text-7xl font-serif font-bold mb-6 leading-tight">
-            Heal. Align. Radiate.
-          </h1>
-          <p className="text-2xl text-amber-700 font-medium italic mb-8">
-            Like sunflowers turning toward the light, we too can rise, heal, and bloom.
-          </p>
-          <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-12">
-            At Sunflowers, we provide a supportive space to help you grow and reconnect with your true self. 
-            Inspired by the sunflower's symbolism of renewal, our holistic and energy-based practices guide 
-            you toward balance, clarity, and inner harmony.
-          </p>
-          <button className="bg-amber-600 text-white px-8 py-3 rounded-full text-lg hover:bg-amber-700 transition-all hover:scale-105">
-            Begin Your Journey
-          </button>
+        </div>
+
+        {/* Hero Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full">
+          <div className="max-w-2xl">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 leading-tight text-white">
+              Heal. Align. Radiate.
+            </h1>
+            <p className="text-xl md:text-2xl text-black font-light mb-8 leading-relaxed">
+              Like sunflowers turning toward the light, we too can rise, heal, and bloom.
+            </p>
+            <p className="text-lg text-black/90 leading-relaxed mb-10">
+              At Sunflowers, we provide a supportive space to help you grow and reconnect with your true self. 
+              Inspired by the sunflower's symbolism of renewal, our holistic and energy-based practices guide 
+              you toward balance, clarity, and inner harmony.
+            </p>
+            <button className="bg-amber-600 text-white px-10 py-4 rounded-full text-lg hover:bg-amber-700 transition-all hover:scale-105 shadow-lg">
+              Book a Consultation
+            </button>
+          </div>
         </div>
       </section>
 
