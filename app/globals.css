@@ -5,82 +5,80 @@
 
 /* Earthy, calm color palette for Sunflowers healing brand */
 :root {
-  /* Primary earthy tones - easy to change globally */
-  --healing-sage: oklch(0.75 0.08 145); /* Soft sage green */
-  --healing-terracotta: oklch(0.65 0.12 45); /* Warm terracotta */
-  --healing-sand: oklch(0.92 0.02 75); /* Light sand beige */
-  --healing-earth: oklch(0.45 0.06 65); /* Deep earth brown */
-  --healing-cream: oklch(0.97 0.01 85); /* Warm cream */
-
-  /* Semantic tokens using healing colors */
-  --background: var(--healing-cream);
-  --foreground: var(--healing-earth);
+  /* Core Sunflower Colors - Bright & Energetic */
+  --sunflower-gold: oklch(0.82 0.18 85);        /* Vibrant golden yellow */
+  --sunflower-center: oklch(0.45 0.12 55);      /* Deep brown center */
+  --sunflower-amber: oklch(0.75 0.16 70);       /* Warm amber */
+  --healing-green: oklch(0.68 0.15 140);        /* Fresh sage green */
+  --earth-clay: oklch(0.55 0.10 50);            /* Warm terracotta */
+  --cream-white: oklch(0.98 0.01 90);           /* Soft cream */
+  --charcoal: oklch(0.30 0.02 260);             /* Deep charcoal for contrast */
+  
+  /* Semantic Tokens - Optimized for Impact */
+  --background: var(--cream-white);
+  --foreground: var(--charcoal);
+  
   --card: oklch(1 0 0);
-  --card-foreground: var(--healing-earth);
+  --card-foreground: var(--charcoal);
+  
   --popover: oklch(1 0 0);
-  --popover-foreground: var(--healing-earth);
-  --primary: var(--healing-sage);
-  --primary-foreground: oklch(0.98 0 0);
-  --secondary: var(--healing-sand);
-  --secondary-foreground: var(--healing-earth);
-  --muted: var(--healing-sand);
-  --muted-foreground: oklch(0.55 0.04 65);
-  --accent: var(--healing-terracotta);
+  --popover-foreground: var(--charcoal);
+  
+  --primary: var(--sunflower-gold);             /* Hero color */
+  --primary-foreground: var(--sunflower-center);
+  
+  --secondary: var(--healing-green);
+  --secondary-foreground: oklch(0.98 0 0);
+  
+  --muted: oklch(0.94 0.01 85);
+  --muted-foreground: oklch(0.50 0.03 55);
+  
+  --accent: var(--earth-clay);
   --accent-foreground: oklch(0.98 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.88 0.02 75);
-  --input: oklch(0.88 0.02 75);
-  --ring: var(--healing-sage);
-  --chart-1: var(--healing-sage);
-  --chart-2: var(--healing-terracotta);
-  --chart-3: var(--healing-sand);
-  --chart-4: var(--healing-earth);
-  --chart-5: oklch(0.82 0.06 155);
-  --radius: 0.75rem;
-  --sidebar: var(--healing-cream);
-  --sidebar-foreground: var(--healing-earth);
-  --sidebar-primary: var(--healing-sage);
-  --sidebar-primary-foreground: oklch(0.98 0 0);
-  --sidebar-accent: var(--healing-sand);
-  --sidebar-accent-foreground: var(--healing-earth);
-  --sidebar-border: oklch(0.88 0.02 75);
-  --sidebar-ring: var(--healing-sage);
+  
+  --destructive: oklch(0.55 0.22 25);
+  --destructive-foreground: oklch(0.98 0 0);
+  
+  --border: oklch(0.88 0.02 80);
+  --input: oklch(0.90 0.02 80);
+  --ring: var(--sunflower-gold);
+  
+  /* Chart colors */
+  --chart-1: var(--sunflower-gold);
+  --chart-2: var(--healing-green);
+  --chart-3: var(--sunflower-amber);
+  --chart-4: var(--earth-clay);
+  --chart-5: oklch(0.75 0.12 180);
+  
+  --radius: 1rem;
 }
 
 .dark {
-  --background: oklch(0.22 0.02 65);
-  --foreground: var(--healing-cream);
-  --card: oklch(0.25 0.02 65);
-  --card-foreground: var(--healing-cream);
-  --popover: oklch(0.25 0.02 65);
-  --popover-foreground: var(--healing-cream);
-  --primary: var(--healing-sage);
-  --primary-foreground: oklch(0.98 0 0);
-  --secondary: oklch(0.32 0.03 65);
-  --secondary-foreground: var(--healing-cream);
-  --muted: oklch(0.32 0.03 65);
-  --muted-foreground: oklch(0.72 0.04 75);
-  --accent: var(--healing-terracotta);
-  --accent-foreground: oklch(0.98 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.32 0.03 65);
-  --input: oklch(0.32 0.03 65);
-  --ring: var(--healing-sage);
-  --chart-1: var(--healing-sage);
-  --chart-2: var(--healing-terracotta);
-  --chart-3: var(--healing-sand);
-  --chart-4: var(--healing-earth);
-  --chart-5: oklch(0.82 0.06 155);
-  --sidebar: oklch(0.25 0.02 65);
-  --sidebar-foreground: var(--healing-cream);
-  --sidebar-primary: var(--healing-sage);
-  --sidebar-primary-foreground: oklch(0.98 0 0);
-  --sidebar-accent: oklch(0.32 0.03 65);
-  --sidebar-accent-foreground: var(--healing-cream);
-  --sidebar-border: oklch(0.32 0.03 65);
-  --sidebar-ring: var(--healing-sage);
+  /* Dark mode with warm, inviting tones */
+  --background: oklch(0.20 0.02 260);
+  --foreground: var(--cream-white);
+  
+  --card: oklch(0.25 0.02 260);
+  --card-foreground: var(--cream-white);
+  
+  --popover: oklch(0.25 0.02 260);
+  --popover-foreground: var(--cream-white);
+  
+  --primary: var(--sunflower-gold);
+  --primary-foreground: var(--sunflower-center);
+  
+  --secondary: oklch(0.35 0.03 260);
+  --secondary-foreground: var(--cream-white);
+  
+  --muted: oklch(0.30 0.02 260);
+  --muted-foreground: oklch(0.70 0.04 80);
+  
+  --accent: var(--sunflower-amber);
+  --accent-foreground: var(--charcoal);
+  
+  --border: oklch(0.35 0.02 260);
+  --input: oklch(0.35 0.02 260);
+  --ring: var(--sunflower-gold);
 }
 
 @theme inline {
@@ -147,7 +145,7 @@
   @keyframes fadeIn {
     from {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(10px);
     }
     to {
       opacity: 1;
@@ -159,7 +157,7 @@
   @keyframes slideInLeft {
     from {
       opacity: 0;
-      transform: translateX(-30px);
+      transform: translateX(-40px);
     }
     to {
       opacity: 1;
@@ -171,7 +169,7 @@
   @keyframes slideInRight {
     from {
       opacity: 0;
-      transform: translateX(30px);
+      transform: translateX(40px);
     }
     to {
       opacity: 1;
@@ -179,11 +177,22 @@
     }
   }
 
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   /* Scale in animation */
   @keyframes scaleIn {
     from {
       opacity: 0;
-      transform: scale(0.95);
+      transform: scale(0.9);
     }
     to {
       opacity: 1;
@@ -191,46 +200,49 @@
     }
   }
 
-  /* Float animation */
-  @keyframes float {
-    0%,
-    100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  }
-
-  /* Pulse animation */
-  @keyframes pulse {
-    0%,
-    100% {
+  /* === AMBIENT ANIMATIONS (Subtle & Continuous) === */
+  
+  @keyframes pulseSubtle {
+    0%, 100% {
       opacity: 1;
     }
     50% {
-      opacity: 0.5;
+      opacity: 0.7;
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-8px);
     }
   }
 
   /* Glow animation */
   @keyframes glow {
-    0%,
-    100% {
-      box-shadow: 0 0 5px rgba(196, 167, 71, 0.3);
+    0%, 100% {
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.3),
+                  0 0 40px rgba(255, 215, 0, 0.1);
     }
     50% {
-      box-shadow: 0 0 20px rgba(196, 167, 71, 0.6);
+      box-shadow: 0 0 30px rgba(255, 215, 0, 0.5),
+                  0 0 60px rgba(255, 215, 0, 0.2);
     }
   }
 
-  /* Shimmer animation */
-  @keyframes shimmer {
-    0% {
-      background-position: -1000px 0;
+  /* === INTERACTION ANIMATIONS === */
+  
+  @keyframes heartbeat {
+    0%, 100% {
+      transform: scale(1);
     }
-    100% {
-      background-position: 1000px 0;
+    10%, 30% {
+      transform: scale(1.1);
+    }
+    20%, 40% {
+      transform: scale(1);
     }
   }
 
@@ -244,195 +256,107 @@
     }
   }
 
-  /* Bounce up animation */
-  @keyframes bounceUp {
-    0%,
-    100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-20px);
-    }
-  }
-
-  /* Slide up animation */
-  @keyframes slideUp {
-    from {
-      opacity: 0;
-      transform: translateY(40px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  /* Slide down animation */
-  @keyframes slideDown {
-    from {
-      opacity: 0;
-      transform: translateY(-40px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  /* Flip animation */
-  @keyframes flip {
+  @keyframes shimmer {
     0% {
-      transform: perspective(400px) rotateY(0);
+      background-position: -200% center;
     }
     100% {
-      transform: perspective(400px) rotateY(360deg);
+      background-position: 200% center;
     }
   }
 
-  /* Wobble animation */
-  @keyframes wobble {
-    0% {
-      transform: translateX(0);
-    }
-    25% {
-      transform: translateX(-5px) rotate(-1deg);
-    }
-    50% {
-      transform: translateX(5px) rotate(1deg);
-    }
-    75% {
-      transform: translateX(-5px) rotate(-1deg);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
 
-  /* Heartbeat animation */
-  @keyframes heartbeat {
-    0%,
-    100% {
-      transform: scale(1);
-    }
-    25% {
-      transform: scale(1.1);
-    }
-    50% {
-      transform: scale(1);
-    }
-  }
-
+  /* === UTILITY CLASSES === */
+  
+  /* Entrance animations */
   .animate-fade-in {
-    animation: fadeIn 0.6s ease-out forwards;
+    animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     opacity: 0;
   }
 
   .animate-slide-in-left {
-    animation: slideInLeft 0.6s ease-out forwards;
+    animation: slideInLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     opacity: 0;
   }
 
   .animate-slide-in-right {
-    animation: slideInRight 0.6s ease-out forwards;
+    animation: slideInRight 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    opacity: 0;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     opacity: 0;
   }
 
   .animate-scale-in {
-    animation: scaleIn 0.5s ease-out forwards;
+    animation: scaleIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     opacity: 0;
+  }
+
+  /* Ambient animations */
+  .animate-pulse-subtle {
+    animation: pulseSubtle 3s ease-in-out infinite;
   }
 
   .animate-float {
-    animation: float 3s ease-in-out infinite;
-  }
-
-  .animate-pulse-subtle {
-    animation: pulse 2s ease-in-out infinite;
+    animation: float 4s ease-in-out infinite;
   }
 
   .animate-glow {
-    animation: glow 2s ease-in-out infinite;
-  }
-
-  .animate-shimmer {
-    animation: shimmer 3s infinite;
-    background-image: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.2) 50%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    background-size: 1000px 100%;
+    animation: glow 3s ease-in-out infinite;
   }
 
   .animate-rotate {
-    animation: rotate 4s linear infinite;
+    animation: rotate 20s linear infinite;
   }
 
-  .animate-bounce-up {
-    animation: bounceUp 2s ease-in-out infinite;
-  }
-
-  .animate-slide-up {
-    animation: slideUp 0.6s ease-out forwards;
-    opacity: 0;
-  }
-
-  .animate-slide-down {
-    animation: slideDown 0.6s ease-out forwards;
-    opacity: 0;
-  }
-
-  .animate-flip {
-    animation: flip 0.6s ease-out;
-  }
-
-  .animate-wobble {
-    animation: wobble 0.5s ease-in-out;
-  }
-
+  /* Interaction animations */
   .animate-heartbeat {
-    animation: heartbeat 1.3s ease-in-out infinite;
+    animation: heartbeat 1.5s ease-in-out;
   }
 
-  /* Stagger animation delays */
-  .animate-delay-100 {
-    animation-delay: 100ms;
+  /* Shimmer effect for loading states */
+  .animate-shimmer {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.3) 50%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
   }
 
-  .animate-delay-200 {
-    animation-delay: 200ms;
+  /* === DELAY UTILITIES === */
+  .animate-delay-50 { animation-delay: 50ms; }
+  .animate-delay-100 { animation-delay: 100ms; }
+  .animate-delay-150 { animation-delay: 150ms; }
+  .animate-delay-200 { animation-delay: 200ms; }
+  .animate-delay-300 { animation-delay: 300ms; }
+  .animate-delay-400 { animation-delay: 400ms; }
+  .animate-delay-500 { animation-delay: 500ms; }
+
+  /* === HOVER EFFECTS === */
+  .hover-lift {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .animate-delay-300 {
-    animation-delay: 300ms;
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   }
 
-  .animate-delay-400 {
-    animation-delay: 400ms;
+  /* === GLASSMORPHISM === */
+  .glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
   }
 
-  .animate-delay-500 {
-    animation-delay: 500ms;
-  }
-
-  .animate-delay-600 {
-    animation-delay: 600ms;
-  }
-
-  .animate-delay-700 {
-    animation-delay: 700ms;
-  }
-
-  .animate-delay-800 {
-    animation-delay: 800ms;
-  }
-
-  .animate-delay-900 {
-    animation-delay: 900ms;
-  }
-
-  .animate-delay-1000 {
-    animation-delay: 1000ms;
+  .dark .glass {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 }

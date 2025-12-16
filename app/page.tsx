@@ -17,6 +17,7 @@ import {
   CheckCircle,
   Zap,
   Lightbulb,
+  ArrowRight,
 } from "lucide-react";
 
 export default function HomePage() {
@@ -27,6 +28,7 @@ export default function HomePage() {
       description:
         "Ancient Japanese healing technique that promotes relaxation and reduces stress through energy transfer.",
       href: "/services/reiki",
+      gradient: "from-red-50 to-pink-50 dark:from-red-950/20 dark:to-pink-950/20",
     },
     {
       icon: Brain,
@@ -34,6 +36,7 @@ export default function HomePage() {
       description:
         "Gentle touch therapy that releases electromagnetic charges of thoughts, feelings, and emotions.",
       href: "/services/access-bars",
+      gradient: "from-purple-50 to-indigo-50 dark:from-purple-950/20 dark:to-indigo-950/20",
     },
     {
       icon: Sparkles,
@@ -41,6 +44,7 @@ export default function HomePage() {
       description:
         "Natural, non-invasive facelift that rejuvenates and revitalizes your appearance.",
       href: "/services/access-energy-facelift",
+      gradient: "from-amber-50 to-yellow-50 dark:from-amber-950/20 dark:to-yellow-950/20",
     },
     {
       icon: Music,
@@ -48,6 +52,7 @@ export default function HomePage() {
       description:
         "Therapeutic application of sound frequencies to restore harmony and balance in the body.",
       href: "/services/sound-healing",
+      gradient: "from-blue-50 to-cyan-50 dark:from-blue-950/20 dark:to-cyan-950/20",
     },
     {
       icon: Wind,
@@ -55,6 +60,7 @@ export default function HomePage() {
       description:
         "Guided meditation sessions to calm the mind, reduce anxiety, and enhance inner peace.",
       href: "/services/meditation",
+      gradient: "from-green-50 to-emerald-50 dark:from-green-950/20 dark:to-emerald-950/20",
     },
     {
       icon: Heart,
@@ -62,6 +68,7 @@ export default function HomePage() {
       description:
         "Discover your life path and purpose through the ancient wisdom of numbers.",
       href: "/services/numerology",
+      gradient: "from-orange-50 to-amber-50 dark:from-orange-950/20 dark:to-amber-950/20",
     },
     {
       icon: Flower2,
@@ -69,6 +76,7 @@ export default function HomePage() {
       description:
         "Balance your energy centers for emotional freedom, clarity, and alignment in all areas of life.",
       href: "/services/chakra-alignment",
+      gradient: "from-violet-50 to-purple-50 dark:from-violet-950/20 dark:to-purple-950/20",
     },
   ];
 
@@ -76,22 +84,22 @@ export default function HomePage() {
     {
       icon: Zap,
       title: "Stress Relief",
-      // description: "Release tension and find deep relaxation",
+      description: "Release tension and find deep relaxation",
     },
     {
       icon: Lightbulb,
       title: "Clarity & Purpose",
-      // description: "Discover your path forward with confidence",
+      description: "Discover your path forward with confidence",
     },
     {
       icon: CheckCircle,
       title: "Emotional Balance",
-      // description: "Heal past patterns and find inner peace",
+      description: "Heal past patterns and find inner peace",
     },
     {
       icon: Star,
       title: "Energy Renewal",
-      // description: "Revitalize your spirit and vitality",
+      description: "Revitalize your spirit and vitality",
     },
   ];
 
@@ -123,78 +131,104 @@ export default function HomePage() {
     <div className="min-h-screen">
       <Navigation />
 
-      {/* Hero Section */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-background to-primary/10" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm animate-fade-in hover:animate-glow transition-all cursor-pointer">
-                <Flower2 className="h-4 w-4 animate-rotate" />
-                <span>Rooted in energy, Created with love </span>
+      {/* HERO SECTION - Bold & Dramatic */}
+      <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-primary/5 via-background to-secondary/10">
+        {/* Animated background elements */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-20 right-20 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse-subtle" />
+          <div className="absolute bottom-40 left-20 w-80 h-80 bg-secondary/20 rounded-full blur-3xl animate-pulse-subtle" style={{ animationDelay: '1s' }} />
+        </div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Left Content */}
+            <div className="space-y-8 z-10">
+              <div className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full text-sm font-medium shadow-lg animate-fade-in backdrop-blur-sm">
+                <Flower2 className="h-5 w-5" />
+                <span>Rooted in Energy, Created with Love</span>
               </div>
-              <h1 className="text-5xl lg:text-6xl font-bold text-foreground text-balance animate-slide-in-left">
-                Heal, Align. Radiate
+              
+              <h1 className="text-6xl lg:text-7xl font-bold text-foreground leading-tight animate-slide-in-left">
+                Heal. Align.
+                <span className="block text-primary mt-2">Radiate.</span>
               </h1>
-              <p className="text-2xl text-primary font-medium italic animate-slide-in-left animate-delay-50">
+              
+              <p className="text-2xl text-foreground/80 font-light italic animate-slide-in-left animate-delay-100">
                 Like sunflowers turning toward the light, we too can rise, heal, and bloom.
               </p>
-              <p className="text-xl text-muted-foreground leading-relaxed text-pretty animate-slide-in-left animate-delay-100">
-                At Sunflowers, we provide a supportive space to help you grow
-                and reconnect with your true self. Inspired by the sunflower’s
-                symbolism of renewal, our holistic and energy-based practices
-                guide you toward balance, clarity, and inner harmony.
+              
+              <p className="text-lg text-muted-foreground leading-relaxed animate-slide-in-left animate-delay-200 max-w-xl">
+                At Sunflowers, we provide a supportive space to help you grow and reconnect with your true self. Our holistic practices guide you toward balance, clarity, and inner harmony.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 animate-fade-in animate-delay-200">
+              <div className="flex flex-col sm:flex-row gap-4 animate-fade-in animate-delay-300">
                 <Button
                   asChild
                   size="lg"
-                  className="bg-primary text-primary-foreground hover:bg-primary/90 hover:scale-110 transition-all duration-300 hover:shadow-lg"
+                  className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 text-lg h-14 px-8"
                 >
-                  <Link href="/contact">Book Your Session</Link>
+                  <Link href="/contact">
+                    Book Your Session
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Link>
                 </Button>
                 <Button
                   asChild
                   size="lg"
                   variant="outline"
-                  className="hover:scale-110 transition-all duration-300 bg-transparent hover:shadow-lg"
+                  className="border-2 hover:bg-foreground/5 hover:scale-105 transition-all duration-300 text-lg h-14 px-8"
                 >
-                  <Link href="/about">Learn More</Link>
+                  <Link href="/about">Discover Our Story</Link>
                 </Button>
               </div>
-            </div>
-            <div className="relative animate-slide-in-right">
-              <HeroCarousel />
-              <div
-                className="absolute -bottom-6 -left-6 bg-card border border-border rounded-xl p-6 shadow-lg animate-bounce"
-                style={{ animationDelay: "0.3s" }}
-              >
-                <p className="text-3xl font-bold text-primary mb-1 animate-pulse-subtle">
-                  500+
-                </p>
-                <p className="text-sm text-muted-foreground">Happy Clients</p>
+
+              {/* Social Proof */}
+              <div className="flex items-center gap-8 pt-8 animate-fade-in animate-delay-400">
+                <div>
+                  <p className="text-4xl font-bold text-primary">500+</p>
+                  <p className="text-sm text-muted-foreground">Happy Clients</p>
+                </div>
+                <div className="h-12 w-px bg-border" />
+                <div>
+                  <p className="text-4xl font-bold text-primary">20+</p>
+                  <p className="text-sm text-muted-foreground">Years Experience</p>
+                </div>
+                <div className="h-12 w-px bg-border" />
+                <div className="flex -space-x-2">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-6 w-6 fill-primary text-primary" />
+                  ))}
+                </div>
               </div>
+            </div>
+
+            {/* Right Content - Carousel */}
+            <div className="relative animate-slide-in-right">
+              <div className="relative z-10">
+                <HeroCarousel />
+              </div>
+              {/* Decorative element */}
+              <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-accent/20 rounded-full blur-3xl -z-10" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      {/* SERVICES SECTION - Grid with Gradients */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
         <ScrollAnimation animation="fade-in">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-foreground mb-4">
-              Our Healing Services
+          <div className="text-center mb-16">
+            <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-4">Our Services</p>
+            <h2 className="text-5xl font-bold text-foreground mb-6">
+              Holistic Healing Modalities
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-              Discover a range of holistic healing modalities designed to
-              support your journey to wellness.
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Discover transformative practices designed to restore balance, clarity, and vitality to your mind, body, and spirit.
             </p>
           </div>
         </ScrollAnimation>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => {
             const Icon = service.icon;
             const isLast = index === services.length - 1;
@@ -203,24 +237,24 @@ export default function HomePage() {
                 key={service.title}
                 className={isLast ? "lg:col-start-2" : ""}
               >
-                <ScrollAnimation animation="slide-up" delay={index * 100}>
-                  <Card className="p-6 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-border group cursor-pointer hover:animate-glow h-full flex flex-col items-center text-center">
-                    <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 group-hover:scale-125 transition-all duration-300 group-hover:rotate-6">
-                      <Icon className="h-6 w-6 text-primary group-hover:text-primary/90 transition-colors group-hover:animate-heartbeat" />
-                    </div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
-                      {service.title}
-                    </h3>
-                    <p className="text-muted-foreground mb-4 leading-relaxed">
-                      {service.description}
-                    </p>
-                    <Link
-                      href={service.href}
-                      className="text-primary hover:text-primary/80 font-medium text-sm inline-flex items-center gap-1 justify-center transition-all"
-                    >
-                      Learn More →
-                    </Link>
-                  </Card>
+                <ScrollAnimation animation="slide-up" delay={index * 50}>
+                  <Link href={service.href}>
+                    <Card className={`group p-8 h-full hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border-2 hover:border-primary/50 cursor-pointer bg-gradient-to-br ${service.gradient}`}>
+                      <div className="bg-primary/90 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
+                        <Icon className="h-8 w-8 text-primary-foreground" />
+                      </div>
+                      <h3 className="text-2xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
+                        {service.title}
+                      </h3>
+                      <p className="text-muted-foreground mb-6 leading-relaxed">
+                        {service.description}
+                      </p>
+                      <div className="flex items-center gap-2 text-primary font-semibold group-hover:gap-4 transition-all">
+                        <span>Learn More</span>
+                        <ArrowRight className="h-5 w-5 group-hover:translate-x-2 transition-transform" />
+                      </div>
+                    </Card>
+                  </Link>
                 </ScrollAnimation>
               </div>
             );
@@ -228,91 +262,97 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <ScrollAnimation animation="fade-in">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-foreground mb-4">
-              Why Choose Sunflowers Healing?
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-              Experience the transformative benefits of holistic healing
-            </p>
-          </div>
-        </ScrollAnimation>
+      {/* BENEFITS SECTION - Bold Cards */}
+      <section className="bg-gradient-to-br from-secondary/10 via-background to-primary/5 py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollAnimation animation="fade-in">
+            <div className="text-center mb-16">
+              <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-4">Benefits</p>
+              <h2 className="text-5xl font-bold text-foreground mb-6">
+                Transform Your Well-Being
+              </h2>
+            </div>
+          </ScrollAnimation>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {benefits.map((benefit, index) => {
-            const Icon = benefit.icon;
-            return (
-              <ScrollAnimation
-                key={benefit.title}
-                animation="slide-up"
-                delay={index * 100}
-              >
-                <div className="text-center p-8 rounded-xl bg-gradient-to-br from-primary/5 to-accent/5 hover:from-primary/10 hover:to-accent/10 transition-all duration-300 border border-primary/10 hover:scale-105 hover:shadow-lg group cursor-pointer h-full">
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/20 mb-4 group-hover:scale-125 transition-all duration-300 group-hover:animate-rotate">
-                    <Icon className="h-8 w-8 text-primary group-hover:animate-pulse-subtle" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {benefits.map((benefit, index) => {
+              const Icon = benefit.icon;
+              return (
+                <ScrollAnimation
+                  key={benefit.title}
+                  animation="slide-up"
+                  delay={index * 100}
+                >
+                  <div className="group text-center p-10 rounded-2xl bg-card hover:bg-primary/5 border-2 border-transparent hover:border-primary/30 transition-all duration-500 hover:scale-105 hover:shadow-xl">
+                    <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/20 mb-6 group-hover:bg-primary group-hover:scale-110 transition-all duration-500">
+                      <Icon className="h-10 w-10 text-primary group-hover:text-primary-foreground transition-colors" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
+                      {benefit.title}
+                    </h3>
+                    <p className="text-muted-foreground">
+                      {benefit.description}
+                    </p>
                   </div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
-                    {benefit.title}
-                  </h3>
-                  {/* <p className="text-sm text-muted-foreground group-hover:text-muted-foreground/80">
-                    {benefit.description}
-                  </p> */}
-                </div>
-              </ScrollAnimation>
-            );
-          })}
+                </ScrollAnimation>
+              );
+            })}
+          </div>
         </div>
       </section>
 
-      {/* About Preview Section */}
-      <section className="bg-secondary/30 py-20">
+      {/* ABOUT PREVIEW - Large Image Split */}
+      <section className="py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
             <ScrollAnimation animation="slide-left">
-              <div className="relative">
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow group">
+              <div className="relative group">
+                <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl">
                   <img
                     src="/energy-healer-peaceful-serene-natural-light.jpg"
                     alt="Energy Healer"
-                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-700 group-hover:brightness-110"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
-                <div
-                  className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold shadow-lg animate-wobble hover:animate-heartbeat"
-                  style={{ animationDelay: "0.5s" }}
-                >
-                  20+ Years Experience
+                {/* Floating badge */}
+                <div className="absolute -top-6 -right-6 bg-primary text-primary-foreground px-8 py-4 rounded-2xl font-bold text-lg shadow-xl z-10">
+                  Certified Healer
                 </div>
+                {/* Decorative element */}
+                <div className="absolute -bottom-6 -left-6 w-48 h-48 bg-secondary/30 rounded-full blur-2xl -z-10" />
               </div>
             </ScrollAnimation>
+            
             <ScrollAnimation animation="slide-right">
-              <div>
-                <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-3 py-1 rounded-full text-sm mb-4">
+              <div className="space-y-6">
+                <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold">
                   <Star className="h-4 w-4" />
-                  <span>Certified Healer</span>
+                  <span>20+ Years of Healing</span>
                 </div>
-                <h2 className="text-4xl font-bold text-foreground mb-6">
-                  Your Journey to Healing
+                
+                <h2 className="text-5xl font-bold text-foreground leading-tight">
+                  Your Journey to
+                  <span className="block text-primary mt-2">Inner Peace</span>
                 </h2>
-                <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
-                  As a certified energy healer, I combine ancient wisdom with
-                  modern techniques to help you release blockages, restore
-                  balance, and reconnect with your inner peace.
+                
+                <p className="text-xl text-muted-foreground leading-relaxed">
+                  As a certified energy healer, I combine ancient wisdom with modern techniques to help you release blockages, restore balance, and reconnect with your inner peace.
                 </p>
-                <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                  Each session is tailored to your unique needs, creating a safe
-                  and nurturing space for transformation and healing.
+                
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Each session is tailored to your unique needs, creating a safe and nurturing space for transformation and healing.
                 </p>
+                
                 <Button
                   asChild
                   size="lg"
                   variant="outline"
-                  className="hover:scale-105 transition-transform bg-transparent"
+                  className="border-2 hover:bg-foreground/5 hover:scale-105 transition-all text-lg h-14 px-8 mt-4"
                 >
-                  <Link href="/about">Read My Story</Link>
+                  <Link href="/about">
+                    Read My Story
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Link>
                 </Button>
               </div>
             </ScrollAnimation>
@@ -320,95 +360,102 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <ScrollAnimation animation="fade-in">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-foreground mb-4">
-              What Our Clients Say
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-              Real transformations from real people
-            </p>
-          </div>
-        </ScrollAnimation>
+      {/* TESTIMONIALS - Cards with Ratings */}
+      <section className="bg-gradient-to-br from-primary/5 via-background to-accent/5 py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollAnimation animation="fade-in">
+            <div className="text-center mb-16">
+              <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-4">Testimonials</p>
+              <h2 className="text-5xl font-bold text-foreground mb-6">
+                Stories of Transformation
+              </h2>
+              <p className="text-xl text-muted-foreground">
+                Hear from those who've experienced profound healing
+              </p>
+            </div>
+          </ScrollAnimation>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          {testimonials.map((testimonial, index) => (
-            <ScrollAnimation
-              key={testimonial.name}
-              animation="slide-up"
-              delay={index * 100}
-            >
-              <Card className="p-6 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-border bg-gradient-to-br from-card to-card/80 group hover:scale-105 h-full">
-                <div className="flex gap-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star
-                      key={i}
-                      className="h-5 w-5 fill-accent text-accent group-hover:animate-heartbeat transition-all"
-                      style={{ animationDelay: `${i * 100}ms` }}
-                    />
-                  ))}
-                </div>
-                <p className="text-foreground mb-6 leading-relaxed italic">
-                  "{testimonial.content}"
-                </p>
-                <div>
-                  <p className="font-semibold text-foreground group-hover:text-primary transition-colors">
-                    {testimonial.name}
+          <div className="grid md:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <ScrollAnimation
+                key={testimonial.name}
+                animation="slide-up"
+                delay={index * 150}
+              >
+                <Card className="p-8 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border-2 hover:border-primary/30 h-full bg-card">
+                  <div className="flex gap-1 mb-6">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className="h-6 w-6 fill-primary text-primary"
+                      />
+                    ))}
+                  </div>
+                  <p className="text-lg text-foreground mb-8 leading-relaxed italic">
+                    "{testimonial.content}"
                   </p>
-                  <p className="text-sm text-muted-foreground">
-                    {testimonial.role}
-                  </p>
-                </div>
-              </Card>
-            </ScrollAnimation>
-          ))}
+                  <div className="pt-6 border-t border-border">
+                    <p className="font-bold text-foreground text-lg">
+                      {testimonial.name}
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      {testimonial.role}
+                    </p>
+                  </div>
+                </Card>
+              </ScrollAnimation>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Engagement Stats Section */}
+      {/* ENGAGEMENT STATS */}
       <EngagementSection />
 
-      {/* CTA Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <ScrollAnimation animation="scale-in">
-          <div className="bg-gradient-to-br from-primary/20 via-accent/10 to-accent/20 rounded-2xl p-12 text-center overflow-hidden relative group hover:shadow-2xl transition-all duration-300">
-            <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary/10 rounded-full blur-3xl group-hover:animate-pulse-subtle" />
-            <div
-              className="absolute -bottom-20 -left-20 w-40 h-40 bg-accent/10 rounded-full blur-3xl group-hover:animate-pulse-subtle"
-              style={{ animationDelay: "1s" }}
-            />
+      {/* CTA SECTION - Bold & Eye-catching */}
+      <section className="py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollAnimation animation="scale-in">
+            <div className="relative bg-gradient-to-br from-primary via-primary/90 to-accent rounded-3xl p-16 text-center overflow-hidden shadow-2xl">
+              {/* Decorative elements */}
+              <div className="absolute -top-20 -right-20 w-80 h-80 bg-white/10 rounded-full blur-3xl" />
+              <div className="absolute -bottom-20 -left-20 w-80 h-80 bg-white/10 rounded-full blur-3xl" />
 
-            <div className="relative z-10">
-              <h2 className="text-4xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors duration-300">
-                Ready to Begin Your Healing Journey?
-              </h2>
-              <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto text-pretty">
-                Take the first step toward transformation. Book your
-                personalized healing session today and experience the profound
-                shift in your energy and well-being.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button
-                  asChild
-                  size="lg"
-                  className="bg-primary text-primary-foreground hover:bg-primary/90 hover:scale-110 transition-all duration-300 hover:shadow-lg"
-                >
-                  <Link href="/contact">Schedule a Consultation</Link>
-                </Button>
-                <Button
-                  asChild
-                  size="lg"
-                  variant="outline"
-                  className="hover:scale-110 transition-all duration-300 bg-transparent hover:shadow-lg"
-                >
-                  <Link href="/services/meditation">Explore Our Services</Link>
-                </Button>
+              <div className="relative z-10 max-w-3xl mx-auto">
+                <Flower2 className="h-16 w-16 text-primary-foreground mx-auto mb-6 animate-pulse-subtle" />
+                
+                <h2 className="text-5xl font-bold text-primary-foreground mb-6">
+                  Begin Your Healing Journey Today
+                </h2>
+                
+                <p className="text-xl text-primary-foreground/90 mb-10 leading-relaxed">
+                  Take the first step toward transformation. Book your personalized healing session and experience profound shifts in your energy and well-being.
+                </p>
+                
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button
+                    asChild
+                    size="lg"
+                    className="bg-white text-primary hover:bg-white/90 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 text-lg h-16 px-10"
+                  >
+                    <Link href="/contact">
+                      Book Your Session
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Link>
+                  </Button>
+                  <Button
+                    asChild
+                    size="lg"
+                    variant="outline"
+                    className="border-2 border-white text-white hover:bg-white/10 hover:scale-105 transition-all duration-300 text-lg h-16 px-10"
+                  >
+                    <Link href="/services/meditation">View All Services</Link>
+                  </Button>
+                </div>
               </div>
             </div>
-          </div>
-        </ScrollAnimation>
+          </ScrollAnimation>
+        </div>
       </section>
 
       <Footer />
