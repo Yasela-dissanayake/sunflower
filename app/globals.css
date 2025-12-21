@@ -3,89 +3,83 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Earthy, calm color palette for Sunflowers healing brand */
+/* VIBRANT SUNFLOWER HEALING THEME */
 :root {
-  /* Primary earthy tones - easy to change globally */
-  --healing-sage: oklch(0.75 0.08 145); /* Soft sage green */
-  --healing-terracotta: oklch(0.65 0.12 45); /* Warm terracotta */
-  --healing-sand: oklch(0.92 0.02 75); /* Light sand beige */
-  --healing-earth: oklch(0.45 0.06 65); /* Deep earth brown */
-  --healing-cream: oklch(0.97 0.01 85); /* Warm cream */
-
-  /* Semantic tokens using healing colors */
-  --background: var(--healing-cream);
-  --foreground: var(--healing-earth);
-  --card: oklch(1 0 0);
-  --card-foreground: var(--healing-earth);
-  --popover: oklch(1 0 0);
-  --popover-foreground: var(--healing-earth);
-  --primary: var(--healing-sage);
-  --primary-foreground: oklch(0.98 0 0);
-  --secondary: var(--healing-sand);
-  --secondary-foreground: var(--healing-earth);
-  --muted: var(--healing-sand);
-  --muted-foreground: oklch(0.55 0.04 65);
-  --accent: var(--healing-terracotta);
-  --accent-foreground: oklch(0.98 0 0);
+  /* Sunflower Theme Colors */
+  --background: #fffbeb;
+  --foreground: #292524;
+  --card: #ffffff;
+  --card-foreground: #292524;
+  --popover: #ffffff;
+  --popover-foreground: #292524;
+  --primary: #f59e0b;
+  --primary-foreground: #ffffff;
+  --secondary: #10b981;
+  --secondary-foreground: #ffffff;
+  --accent: #f97316;
+  --accent-foreground: #ffffff;
+  --muted: #fef3c7;
+  --muted-foreground: #78716c;
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.88 0.02 75);
-  --input: oklch(0.88 0.02 75);
-  --ring: var(--healing-sage);
-  --chart-1: var(--healing-sage);
-  --chart-2: var(--healing-terracotta);
-  --chart-3: var(--healing-sand);
-  --chart-4: var(--healing-earth);
-  --chart-5: oklch(0.82 0.06 155);
+  --destructive-foreground: #ffffff;
+  --border: #fde68a;
+  --input: #fde68a;
+  --ring: #f59e0b;
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
   --radius: 0.75rem;
-  --sidebar: var(--healing-cream);
-  --sidebar-foreground: var(--healing-earth);
-  --sidebar-primary: var(--healing-sage);
-  --sidebar-primary-foreground: oklch(0.98 0 0);
-  --sidebar-accent: var(--healing-sand);
-  --sidebar-accent-foreground: var(--healing-earth);
-  --sidebar-border: oklch(0.88 0.02 75);
-  --sidebar-ring: var(--healing-sage);
+  --sidebar: #fffbeb;
+  --sidebar-foreground: #292524;
+  --sidebar-primary: #f59e0b;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #fef3c7;
+  --sidebar-accent-foreground: #292524;
+  --sidebar-border: #fde68a;
+  --sidebar-ring: #f59e0b;
 }
 
 .dark {
-  --background: oklch(0.22 0.02 65);
-  --foreground: var(--healing-cream);
-  --card: oklch(0.25 0.02 65);
-  --card-foreground: var(--healing-cream);
-  --popover: oklch(0.25 0.02 65);
-  --popover-foreground: var(--healing-cream);
-  --primary: var(--healing-sage);
-  --primary-foreground: oklch(0.98 0 0);
-  --secondary: oklch(0.32 0.03 65);
-  --secondary-foreground: var(--healing-cream);
-  --muted: oklch(0.32 0.03 65);
-  --muted-foreground: oklch(0.72 0.04 75);
-  --accent: var(--healing-terracotta);
-  --accent-foreground: oklch(0.98 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.32 0.03 65);
-  --input: oklch(0.32 0.03 65);
-  --ring: var(--healing-sage);
-  --chart-1: var(--healing-sage);
-  --chart-2: var(--healing-terracotta);
-  --chart-3: var(--healing-sand);
-  --chart-4: var(--healing-earth);
-  --chart-5: oklch(0.82 0.06 155);
-  --sidebar: oklch(0.25 0.02 65);
-  --sidebar-foreground: var(--healing-cream);
-  --sidebar-primary: var(--healing-sage);
-  --sidebar-primary-foreground: oklch(0.98 0 0);
-  --sidebar-accent: oklch(0.32 0.03 65);
-  --sidebar-accent-foreground: var(--healing-cream);
-  --sidebar-border: oklch(0.32 0.03 65);
-  --sidebar-ring: var(--healing-sage);
+  --background: #1c1917;
+  --foreground: #fffbeb;
+  --card: #292524;
+  --card-foreground: #fffbeb;
+  --popover: #292524;
+  --popover-foreground: #fffbeb;
+  --primary: #f59e0b;
+  --primary-foreground: #ffffff;
+  --secondary: #10b981;
+  --secondary-foreground: #ffffff;
+  --accent: #f97316;
+  --accent-foreground: #ffffff;
+  --muted: #44403c;
+  --muted-foreground: #a8a29e;
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: #44403c;
+  --input: #44403c;
+  --ring: #f59e0b;
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: #292524;
+  --sidebar-foreground: #fffbeb;
+  --sidebar-primary: #f59e0b;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #44403c;
+  --sidebar-accent-foreground: #fffbeb;
+  --sidebar-border: #44403c;
+  --sidebar-ring: #f59e0b;
 }
 
 @theme inline {
-  --font-sans: var(--font-cormorant);
-  --font-serif: var(--font-lora);
+  --font-sans: "Playfair Display", "Georgia", serif;
+  --font-serif: "Playfair Display", "Georgia", serif;
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -130,24 +124,17 @@
   }
   body {
     @apply bg-background text-foreground;
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32"><defs><linearGradient id="petalGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:%23FFD700;stop-opacity:1" /><stop offset="100%" style="stop-color:%23FFA500;stop-opacity:1" /></linearGradient><linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23654321;stop-opacity:1" /><stop offset="100%" style="stop-color:%233D2817;stop-opacity:1" /></linearGradient></defs><g transform="translate(32,32)"><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(0)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(30)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(60)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(90)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(120)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(150)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(180)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(210)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(240)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(270)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(300)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(330)"/><circle cx="0" cy="0" r="8" fill="url(%23centerGrad)"/><circle cx="0" cy="0" r="6" fill="%23D2B48C" opacity="0.8"/></g></svg>')
-        16 16,
-      auto;
-  }
-  a,
-  button {
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32"><defs><linearGradient id="petalGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:%23FFD700;stop-opacity:1" /><stop offset="100%" style="stop-color:%23FFA500;stop-opacity:1" /></linearGradient><linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23654321;stop-opacity:1" /><stop offset="100%" style="stop-color:%233D2817;stop-opacity:1" /></linearGradient></defs><g transform="translate(32,32)"><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(0)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(30)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(60)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(90)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(120)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(150)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(180)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(210)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(240)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(270)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(300)"/><ellipse cx="0" cy="-18" rx="5" ry="14" fill="url(%23petalGrad)" transform="rotate(330)"/><circle cx="0" cy="0" r="8" fill="url(%23centerGrad)"/><circle cx="0" cy="0" r="6" fill="%23D2B48C" opacity="0.8"/></g></svg>')
-        16 16,
-      pointer;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 
 @layer utilities {
-  /* Fade in animation */
-  @keyframes fadeIn {
+  /* === SMOOTH ENTRANCE ANIMATIONS === */
+  @keyframes fadeInUp {
     from {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(30px);
     }
     to {
       opacity: 1;
@@ -155,11 +142,19 @@
     }
   }
 
-  /* Slide in from left */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
   @keyframes slideInLeft {
     from {
       opacity: 0;
-      transform: translateX(-30px);
+      transform: translateX(-40px);
     }
     to {
       opacity: 1;
@@ -167,11 +162,10 @@
     }
   }
 
-  /* Slide in from right */
   @keyframes slideInRight {
     from {
       opacity: 0;
-      transform: translateX(30px);
+      transform: translateX(40px);
     }
     to {
       opacity: 1;
@@ -179,7 +173,6 @@
     }
   }
 
-  /* Scale in animation */
   @keyframes scaleIn {
     from {
       opacity: 0;
@@ -191,248 +184,199 @@
     }
   }
 
-  /* Float animation */
+  /* === HEALING/CALMING ANIMATIONS === */
   @keyframes float {
     0%,
     100% {
-      transform: translateY(0);
+      transform: translateY(0px);
     }
     50% {
-      transform: translateY(-10px);
+      transform: translateY(-12px);
     }
   }
 
-  /* Pulse animation */
-  @keyframes pulse {
+  @keyframes pulse-gentle {
     0%,
     100% {
       opacity: 1;
+      transform: scale(1);
     }
     50% {
-      opacity: 0.5;
+      opacity: 0.85;
+      transform: scale(1.02);
     }
   }
 
-  /* Glow animation */
+
+  /* BREATHING ANIMATION - Mimics calm breathing for CTAs */
+  @keyframes breathe {
+    0%,
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+    }
+    50% {
+      transform: scale(1.03);
+      box-shadow: 0 0 35px rgba(245, 158, 11, 0.5);
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% center;
+    }
+    100% {
+      background-position: 200% center;
+    }
+  }
+
   @keyframes glow {
     0%,
     100% {
-      box-shadow: 0 0 5px rgba(196, 167, 71, 0.3);
+      box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
     }
     50% {
-      box-shadow: 0 0 20px rgba(196, 167, 71, 0.6);
+      box-shadow: 0 0 40px rgba(245, 158, 11, 0.7);
     }
   }
 
-  /* Shimmer animation */
-  @keyframes shimmer {
+  /* FLOATING PETAL ANIMATION - For ambient particles */
+  @keyframes petal-float {
     0% {
-      background-position: -1000px 0;
+      transform: translateY(0) rotate(0deg) translateX(0);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
     }
     100% {
-      background-position: 1000px 0;
+      transform: translateY(100vh) rotate(360deg) translateX(100px);
+      opacity: 0;
     }
   }
 
-  /* Rotate animation */
-  @keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-  /* Bounce up animation */
-  @keyframes bounceUp {
+  /* AMBIENT ORB DRIFT - For background orbs */
+  @keyframes orb-drift {
     0%,
     100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-20px);
-    }
-  }
-
-  /* Slide up animation */
-  @keyframes slideUp {
-    from {
-      opacity: 0;
-      transform: translateY(40px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  /* Slide down animation */
-  @keyframes slideDown {
-    from {
-      opacity: 0;
-      transform: translateY(-40px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  /* Flip animation */
-  @keyframes flip {
-    0% {
-      transform: perspective(400px) rotateY(0);
-    }
-    100% {
-      transform: perspective(400px) rotateY(360deg);
-    }
-  }
-
-  /* Wobble animation */
-  @keyframes wobble {
-    0% {
-      transform: translateX(0);
+      transform: translate(0, 0) scale(1);
     }
     25% {
-      transform: translateX(-5px) rotate(-1deg);
+      transform: translate(20px, -30px) scale(1.1);
     }
     50% {
-      transform: translateX(5px) rotate(1deg);
+      transform: translate(-10px, -50px) scale(0.9);
     }
     75% {
-      transform: translateX(-5px) rotate(-1deg);
-    }
-    100% {
-      transform: translateX(0);
+      transform: translate(-30px, -20px) scale(1.05);
     }
   }
 
-  /* Heartbeat animation */
-  @keyframes heartbeat {
-    0%,
-    100% {
-      transform: scale(1);
-    }
-    25% {
-      transform: scale(1.1);
-    }
-    50% {
-      transform: scale(1);
-    }
+  /* === UTILITY CLASSES === */
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   }
 
   .animate-fade-in {
     animation: fadeIn 0.6s ease-out forwards;
-    opacity: 0;
   }
 
   .animate-slide-in-left {
-    animation: slideInLeft 0.6s ease-out forwards;
-    opacity: 0;
+    animation: slideInLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   }
 
   .animate-slide-in-right {
-    animation: slideInRight 0.6s ease-out forwards;
-    opacity: 0;
+    animation: slideInRight 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   }
 
   .animate-scale-in {
-    animation: scaleIn 0.5s ease-out forwards;
-    opacity: 0;
+    animation: scaleIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   }
 
   .animate-float {
-    animation: float 3s ease-in-out infinite;
+    animation: float 4s ease-in-out infinite;
   }
 
-  .animate-pulse-subtle {
-    animation: pulse 2s ease-in-out infinite;
+  .animate-pulse-gentle {
+    animation: pulse-gentle 3s ease-in-out infinite;
+  }
+
+  .animate-breathe {
+    animation: breathe 4s ease-in-out infinite;
+  }
+
+  .animate-shimmer {
+    background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.4) 50%, transparent 100%);
+    background-size: 200% 100%;
+    animation: shimmer 2.5s infinite;
   }
 
   .animate-glow {
     animation: glow 2s ease-in-out infinite;
   }
 
-  .animate-shimmer {
-    animation: shimmer 3s infinite;
-    background-image: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.2) 50%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    background-size: 1000px 100%;
+  .animate-petal {
+    animation: petal-float linear infinite;
   }
 
-  .animate-rotate {
-    animation: rotate 4s linear infinite;
+  .animate-orb {
+    animation: orb-drift 20s ease-in-out infinite;
   }
 
-  .animate-bounce-up {
-    animation: bounceUp 2s ease-in-out infinite;
-  }
-
-  .animate-slide-up {
-    animation: slideUp 0.6s ease-out forwards;
-    opacity: 0;
-  }
-
-  .animate-slide-down {
-    animation: slideDown 0.6s ease-out forwards;
-    opacity: 0;
-  }
-
-  .animate-flip {
-    animation: flip 0.6s ease-out;
-  }
-
-  .animate-wobble {
-    animation: wobble 0.5s ease-in-out;
-  }
-
-  .animate-heartbeat {
-    animation: heartbeat 1.3s ease-in-out infinite;
-  }
-
-  /* Stagger animation delays */
+  /* Delay utilities */
   .animate-delay-100 {
     animation-delay: 100ms;
   }
-
   .animate-delay-200 {
     animation-delay: 200ms;
   }
-
   .animate-delay-300 {
     animation-delay: 300ms;
   }
-
   .animate-delay-400 {
     animation-delay: 400ms;
   }
-
   .animate-delay-500 {
     animation-delay: 500ms;
   }
-
   .animate-delay-600 {
     animation-delay: 600ms;
   }
 
-  .animate-delay-700 {
-    animation-delay: 700ms;
+  /* === GRADIENT UTILITIES === */
+  .gradient-sunflower {
+    background: linear-gradient(135deg, #fcd34d 0%, #f59e0b 50%, #f97316 100%);
   }
 
-  .animate-delay-800 {
-    animation-delay: 800ms;
+  .gradient-sunset {
+    background: linear-gradient(135deg, #f97316 0%, #f59e0b 50%, #fcd34d 100%);
   }
 
-  .animate-delay-900 {
-    animation-delay: 900ms;
+  .gradient-healing {
+    background: linear-gradient(135deg, #fef3c7 0%, #fffbeb 50%, #fef3c7 100%);
   }
 
-  .animate-delay-1000 {
-    animation-delay: 1000ms;
+  /* === GLASSMORPHISM === */
+  .glass {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(245, 158, 11, 0.2);
+  }
+
+  .dark .glass {
+    background: rgba(41, 37, 36, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+  }
+
+  /* === TEXT GRADIENTS === */
+  .text-gradient-sunflower {
+    background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
