@@ -27,7 +27,7 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group py-2">
             <img
-              src="/healing-logo2.png"
+              src="/sunflower-bg-rm.png"
               alt="Logo"
               className="h-20 w-20 object-cover"
             />
