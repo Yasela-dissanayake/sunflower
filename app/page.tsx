@@ -572,9 +572,9 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 text-center">
           <div className="flex items-center justify-center gap-3 mb-6">
             <img
-              src="/sunflower-bg-rm.png"
+              src="/sun-logo.png"
               alt="logo"
-              className="h-30 w-30 object-cover"
+              className="h-50 w-50 object-cover"
             />
           </div>
           <p className="text-[#BFE1D3]/90 mb-10 text-lg font-light italic">
