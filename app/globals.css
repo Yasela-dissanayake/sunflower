@@ -3,84 +3,90 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Mint & golden palette for Sunflowers healing brand */
+/* Sunflowers brand palette */
 :root {
-  /* Primary brand tones — #BFE1D3 mint green & #78632C golden brown */
-  --healing-sage: oklch(0.87 0.05 162); /* Mint green  #BFE1D3 */
-  --healing-terracotta: oklch(0.48 0.1 75); /* Golden brown #78632C */
-  --healing-sand: oklch(0.93 0.03 162); /* Light mint for backgrounds */
-  --healing-earth: oklch(0.35 0.08 75); /* Deep golden brown for text */
-  --healing-cream: oklch(0.97 0.01 162); /* Mint-tinted cream */
+  /* Core brand colors */
+  --light-within: oklch(0.73 0.12 78);       /* Rich, luminous gold    #D4A843 — CTAs, highlights */
+  --petal-blush: oklch(0.87 0.05 30);        /* Soft, delicate peach   #F5C5B0 — bg sections */
+  --minty-serenity: oklch(0.87 0.05 162);    /* Calm, fresh pale green #BFE1D3 — overlays */
+  --energy-flow: oklch(0.47 0.09 172);       /* Deep, healing teal     #1E7A6B — text, accents */
+  --healing-shade: oklch(0.52 0.07 130);     /* Warm olive green       #6B7A55 — body text */
+  --sunflower-core: oklch(0.49 0.12 75);     /* Dark bronze-gold       #8B6A18 — deep accents */
 
-  /* Semantic tokens using healing colors */
-  --background: var(--healing-cream);
-  --foreground: var(--healing-earth);
+  /* Derived tints */
+  --minty-serenity-light: oklch(0.97 0.02 162); /* Very light mint — page background */
+  --petal-blush-light: oklch(0.97 0.02 30);     /* Very light peach — section background */
+  --energy-flow-dark: oklch(0.32 0.08 172);     /* Dark teal — headings */
+
+  /* Semantic tokens */
+  --background: var(--minty-serenity-light);
+  --foreground: var(--healing-shade);
   --card: oklch(1 0 0);
-  --card-foreground: var(--healing-earth);
+  --card-foreground: var(--energy-flow-dark);
   --popover: oklch(1 0 0);
-  --popover-foreground: var(--healing-earth);
-  --primary: var(--healing-terracotta);
+  --popover-foreground: var(--energy-flow-dark);
+  --primary: var(--energy-flow);
   --primary-foreground: oklch(0.98 0 0);
-  --secondary: var(--healing-sand);
-  --secondary-foreground: var(--healing-earth);
-  --muted: var(--healing-sand);
-  --muted-foreground: oklch(0.55 0.06 75);
-  --accent: var(--healing-sage);
-  --accent-foreground: var(--healing-earth);
+  --secondary: var(--petal-blush-light);
+  --secondary-foreground: var(--healing-shade);
+  --muted: oklch(0.94 0.025 162);
+  --muted-foreground: var(--healing-shade);
+  --accent: var(--light-within);
+  --accent-foreground: oklch(0.15 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.88 0.03 162);
-  --input: oklch(0.88 0.03 162);
-  --ring: var(--healing-terracotta);
-  --chart-1: var(--healing-terracotta);
-  --chart-2: var(--healing-sage);
-  --chart-3: var(--healing-sand);
-  --chart-4: var(--healing-earth);
-  --chart-5: oklch(0.72 0.06 155);
+  --border: oklch(0.88 0.04 162);
+  --input: oklch(0.88 0.04 162);
+  --ring: var(--energy-flow);
+  --chart-1: var(--light-within);
+  --chart-2: var(--energy-flow);
+  --chart-3: var(--minty-serenity);
+  --chart-4: var(--healing-shade);
+  --chart-5: var(--petal-blush);
   --radius: 0.75rem;
-  --sidebar: var(--healing-cream);
-  --sidebar-foreground: var(--healing-earth);
-  --sidebar-primary: var(--healing-terracotta);
+  --sidebar: var(--minty-serenity-light);
+  --sidebar-foreground: var(--healing-shade);
+  --sidebar-primary: var(--energy-flow);
   --sidebar-primary-foreground: oklch(0.98 0 0);
-  --sidebar-accent: var(--healing-sand);
-  --sidebar-accent-foreground: var(--healing-earth);
-  --sidebar-border: oklch(0.88 0.03 162);
-  --sidebar-ring: var(--healing-terracotta);
+  --sidebar-accent: oklch(0.94 0.025 162);
+  --sidebar-accent-foreground: var(--healing-shade);
+  --sidebar-border: oklch(0.88 0.04 162);
+  --sidebar-ring: var(--energy-flow);
 }
 
 .dark {
-  --background: oklch(0.2 0.03 75);
-  --foreground: var(--healing-cream);
-  --card: oklch(0.24 0.03 75);
-  --card-foreground: var(--healing-cream);
-  --popover: oklch(0.24 0.03 75);
-  --popover-foreground: var(--healing-cream);
-  --primary: var(--healing-terracotta);
-  --primary-foreground: oklch(0.98 0 0);
-  --secondary: oklch(0.3 0.04 75);
-  --secondary-foreground: var(--healing-cream);
-  --muted: oklch(0.3 0.04 75);
-  --muted-foreground: oklch(0.72 0.04 162);
-  --accent: var(--healing-sage);
-  --accent-foreground: var(--healing-earth);
+  --background: oklch(0.16 0.04 172);
+  --foreground: var(--minty-serenity-light);
+  --card: oklch(0.2 0.04 172);
+  --card-foreground: var(--minty-serenity-light);
+  --popover: oklch(0.2 0.04 172);
+  --popover-foreground: var(--minty-serenity-light);
+  --primary: var(--light-within);
+  --primary-foreground: oklch(0.15 0 0);
+  --secondary: oklch(0.26 0.05 172);
+  --secondary-foreground: var(--minty-serenity-light);
+  --muted: oklch(0.26 0.05 172);
+  --muted-foreground: var(--minty-serenity);
+  --accent: var(--energy-flow);
+  --accent-foreground: oklch(0.98 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.3 0.04 75);
-  --input: oklch(0.3 0.04 75);
-  --ring: var(--healing-terracotta);
-  --chart-1: var(--healing-terracotta);
-  --chart-2: var(--healing-sage);
-  --chart-3: var(--healing-sand);
-  --chart-4: var(--healing-earth);
-  --chart-5: oklch(0.72 0.06 155);
-  --sidebar: oklch(0.24 0.03 75);
-  --sidebar-foreground: var(--healing-cream);
-  --sidebar-primary: var(--healing-terracotta);
-  --sidebar-primary-foreground: oklch(0.98 0 0);
-  --sidebar-accent: oklch(0.3 0.04 75);
-  --sidebar-accent-foreground: var(--healing-cream);
-  --sidebar-border: oklch(0.3 0.04 75);
-  --sidebar-ring: var(--healing-terracotta);
+  --border: oklch(0.26 0.05 172);
+  --input: oklch(0.26 0.05 172);
+  --ring: var(--light-within);
+  --chart-1: var(--light-within);
+  --chart-2: var(--energy-flow);
+  --chart-3: var(--minty-serenity);
+  --chart-4: var(--healing-shade);
+  --chart-5: var(--petal-blush);
+  --sidebar: oklch(0.2 0.04 172);
+  --sidebar-foreground: var(--minty-serenity-light);
+  --sidebar-primary: var(--light-within);
+  --sidebar-primary-foreground: oklch(0.15 0 0);
+  --sidebar-accent: oklch(0.26 0.05 172);
+  --sidebar-accent-foreground: var(--minty-serenity-light);
+  --sidebar-border: oklch(0.26 0.05 172);
+  --sidebar-ring: var(--light-within);
 }
 
 @theme inline {
@@ -208,10 +214,10 @@
   @keyframes glow {
     0%,
     100% {
-      box-shadow: 0 0 5px rgba(120, 99, 44, 0.3);
+      box-shadow: 0 0 5px rgba(30, 122, 107, 0.3);
     }
     50% {
-      box-shadow: 0 0 20px rgba(120, 99, 44, 0.6);
+      box-shadow: 0 0 20px rgba(30, 122, 107, 0.6);
     }
   }
 

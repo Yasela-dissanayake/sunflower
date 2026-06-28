@@ -29,7 +29,7 @@ export default function HomePage() {
       title: "Reiki",
       description:
         "Ancient Japanese healing technique that promotes relaxation and reduces stress through energy transfer.",
-      gradient: "from-[#78632C] to-[#9a813a]",
+      gradient: "from-[#D4A843] to-[#CFA429]",
     },
     {
       icon: Brain,
@@ -64,7 +64,7 @@ export default function HomePage() {
       title: "Numerology",
       description:
         "Discover your life path and purpose through the ancient wisdom of numbers.",
-      gradient: "from-[#78632C] to-[#BFE1D3]",
+      gradient: "from-[#1E7A6B] to-[#BFE1D3]",
     },
     {
       icon: Flower2,
@@ -116,7 +116,7 @@ export default function HomePage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#f4f9f7] text-slate-800 font-sans selection:bg-[#BFE1D3] selection:text-[#78632C] overflow-hidden">
+    <div className="min-h-screen bg-[#f0f8f5] text-[#6B7A55] font-sans selection:bg-[#BFE1D3] selection:text-[#1E7A6B] overflow-hidden">
       {/* Decorative Fixed Orbs for Energy Feel */}
       <div className="fixed top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
         <motion.div
@@ -132,7 +132,7 @@ export default function HomePage() {
             ease: "easeInOut",
             delay: 1,
           }}
-          className="absolute top-[40%] -right-[10%] w-[60%] h-[60%] rounded-full bg-[#78632C]/15 blur-[150px]"
+          className="absolute top-[40%] -right-[10%] w-[60%] h-[60%] rounded-full bg-[#1E7A6B]/15 blur-[150px]"
         />
         <motion.div
           animate={{ scale: [1, 1.15, 1], opacity: [0.2, 0.35, 0.2] }}
@@ -160,9 +160,9 @@ export default function HomePage() {
           >
             <div className="relative">
               <img
-                src="/sun-logo.png"
+                src="/sun-logo-2.png"
                 alt="logo"
-                className="h-40 w-40 object-cover"
+                className="h-40 w-50 object-cover"
               />
             </div>
             {/* <span className="text-2xl font-serif font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-600 to-orange-700">
@@ -175,10 +175,10 @@ export default function HomePage() {
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
-                className="relative group text-slate-700 hover:text-[#78632C] transition-colors"
+                className="relative group text-[#6B7A55] hover:text-[#1E7A6B] transition-colors"
               >
                 {item}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#78632C] transition-all group-hover:w-full" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#1E7A6B] transition-all group-hover:w-full" />
               </a>
             ))}
           </div>
@@ -186,10 +186,10 @@ export default function HomePage() {
           <motion.button
             whileHover={{
               scale: 1.05,
-              boxShadow: "0 0 15px rgba(120, 99, 44, 0.5)",
+              boxShadow: "0 0 15px rgba(212, 168, 67, 0.5)",
             }}
             whileTap={{ scale: 0.95 }}
-            className="bg-[#78632C] text-white px-7 py-2.5 rounded-full text-sm font-medium shadow-lg shadow-[#78632C]/30 transition-all"
+            className="bg-[#D4A843] text-white px-7 py-2.5 rounded-full text-sm font-medium shadow-lg shadow-[#D4A843]/30 transition-all"
           >
             Book Session
           </motion.button>
@@ -221,27 +221,27 @@ export default function HomePage() {
           >
             <motion.div
               variants={fadeUpVariants}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/50 backdrop-blur-md border border-[#78632C]/30 shadow-sm mb-6"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/50 backdrop-blur-md border border-[#1E7A6B]/30 shadow-sm mb-6"
             >
-              <Sparkles className="w-4 h-4 text-[#78632C]" />
-              <span className="text-sm font-medium text-[#78632C]">
+              <Sparkles className="w-4 h-4 text-[#1E7A6B]" />
+              <span className="text-sm font-medium text-[#1E7A6B]">
                 Awaken Your Inner Light
               </span>
             </motion.div>
 
             <motion.h1
               variants={fadeUpVariants}
-              className="text-6xl md:text-7xl lg:text-8xl font-serif font-bold mb-6 leading-[1.1] text-slate-900 tracking-tight"
+              className="text-6xl md:text-7xl lg:text-8xl font-serif font-bold mb-6 leading-[1.1] text-[#2E4A3A] tracking-tight"
             >
               Heal. Align. <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#78632C] via-[#9a813a] to-[#BFE1D3]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4A843] via-[#1E7A6B] to-[#BFE1D3]">
                 Radiate.
               </span>
             </motion.h1>
 
             <motion.p
               variants={fadeUpVariants}
-              className="text-xl md:text-2xl text-slate-700 font-light mb-8 leading-relaxed"
+              className="text-xl md:text-2xl text-[#6B7A55] font-light mb-8 leading-relaxed"
             >
               Like sunflowers turning toward the light, we too can rise, heal,
               and bloom.
@@ -249,7 +249,7 @@ export default function HomePage() {
 
             <motion.p
               variants={fadeUpVariants}
-              className="text-lg text-slate-600 leading-relaxed mb-10 max-w-xl"
+              className="text-lg text-[#6B7A55]/90 leading-relaxed mb-10 max-w-xl"
             >
               At Sunflowers, we provide a supportive space to help you grow and
               reconnect with your true self. Inspired by the sunflower's
@@ -264,7 +264,7 @@ export default function HomePage() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-[#78632C] text-white px-8 py-4 rounded-full text-lg font-medium shadow-xl shadow-[#78632C]/25 border border-white/10 group flex items-center gap-2"
+                className="bg-[#D4A843] text-white px-8 py-4 rounded-full text-lg font-medium shadow-xl shadow-[#D4A843]/25 border border-white/10 group flex items-center gap-2"
               >
                 Start Your Journey
                 <Wind className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -275,7 +275,7 @@ export default function HomePage() {
                   backgroundColor: "rgba(255,255,255,0.9)",
                 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-white/60 backdrop-blur-md text-slate-800 px-8 py-4 rounded-full text-lg font-medium shadow-sm border border-white/50 transition-colors"
+                className="bg-white/60 backdrop-blur-md text-[#3A5A48] px-8 py-4 rounded-full text-lg font-medium shadow-sm border border-white/50 transition-colors"
               >
                 Learn More
               </motion.button>
@@ -294,10 +294,10 @@ export default function HomePage() {
             variants={fadeUpVariants}
             className="text-center mb-20"
           >
-            <h2 className="text-5xl md:text-6xl font-serif font-bold mb-6 text-slate-900">
+            <h2 className="text-5xl md:text-6xl font-serif font-bold mb-6 text-[#2E4A3A]">
               Healing Offerings
             </h2>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto font-light">
+            <p className="text-xl text-[#6B7A55]/90 max-w-2xl mx-auto font-light">
               Discover a range of holistic modalities designed to clear
               blockages, restore energy flow, and support your well-being.
             </p>
@@ -324,18 +324,18 @@ export default function HomePage() {
                     className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${service.gradient} p-0.5 mb-6 shadow-md transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}
                   >
                     <div className="w-full h-full bg-white rounded-2xl flex items-center justify-center">
-                      <Icon className="w-8 h-8 text-slate-800" />
+                      <Icon className="w-8 h-8 text-[#3A5A48]" />
                     </div>
                   </div>
 
-                  <h3 className="text-2xl font-serif font-bold mb-4 text-slate-800">
+                  <h3 className="text-2xl font-serif font-bold mb-4 text-[#3A5A48]">
                     {service.title}
                   </h3>
-                  <p className="text-slate-600 leading-relaxed font-light">
+                  <p className="text-[#6B7A55]/90 leading-relaxed font-light">
                     {service.description}
                   </p>
 
-                  <div className="mt-8 flex items-center text-sm font-medium text-[#78632C] opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 gap-1">
+                  <div className="mt-8 flex items-center text-sm font-medium text-[#1E7A6B] opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 gap-1">
                     Book this session <Sparkles className="w-4 h-4 ml-1" />
                   </div>
                 </motion.div>
@@ -359,7 +359,7 @@ export default function HomePage() {
               transition={{ duration: 0.8 }}
               className="relative"
             >
-              <div className="absolute -inset-4 bg-gradient-to-tr from-[#78632C]/60 to-[#BFE1D3] rounded-[2.5rem] blur-2xl opacity-30 animate-pulse" />
+              <div className="absolute -inset-4 bg-gradient-to-tr from-[#1E7A6B]/60 to-[#BFE1D3] rounded-[2.5rem] blur-2xl opacity-30 animate-pulse" />
               <img
                 src="/Shaista-13.jpg"
                 alt="Energy Healer"
@@ -371,10 +371,10 @@ export default function HomePage() {
                 animate="animate"
                 className="absolute -bottom-8 -right-8 bg-white/80 backdrop-blur-xl p-6 rounded-3xl shadow-xl border border-white/50 z-20"
               >
-                <div className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#78632C] to-[#78632C]/70 mb-1">
+                <div className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#D4A843] to-[#D4A843]/70 mb-1">
                   20+
                 </div>
-                <div className="text-sm font-medium text-slate-600 uppercase tracking-wider">
+                <div className="text-sm font-medium text-[#6B7A55]/90 uppercase tracking-wider">
                   Years Experience
                 </div>
               </motion.div>
@@ -389,19 +389,19 @@ export default function HomePage() {
               className="space-y-8"
             >
               <div>
-                <motion.div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#BFE1D3]/50 text-[#78632C] text-sm font-medium mb-4">
+                <motion.div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#BFE1D3]/50 text-[#1E7A6B] text-sm font-medium mb-4">
                   <Flower2 className="w-4 h-4" /> About My Journey
                 </motion.div>
-                <h2 className="text-5xl font-serif font-bold text-slate-900 leading-tight">
+                <h2 className="text-5xl font-serif font-bold text-[#2E4A3A] leading-tight">
                   Guided by{" "}
-                  <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#78632C] to-[#78632C]/70">
+                  <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#D4A843] to-[#D4A843]/70">
                     Love
                   </span>{" "}
                   & Energy
                 </h2>
               </div>
 
-              <div className="space-y-6 text-lg text-slate-600 font-light leading-relaxed">
+              <div className="space-y-6 text-lg text-[#6B7A55]/90 font-light leading-relaxed">
                 <p>
                   As a Certified Early Childhood Educator, Reiki Master Teacher,
                   Access Bars Practitioner, and Numerologist, my path has been a
@@ -414,7 +414,7 @@ export default function HomePage() {
                   healing, specifically Reiki, a profound shift occurred within
                   me. I felt more connected, grounded, and whole.
                 </p>
-                <p className="pl-6 border-l-2 border-[#78632C] italic text-xl text-slate-700 py-2">
+                <p className="pl-6 border-l-2 border-[#1E7A6B] italic text-xl text-[#6B7A55] py-2">
                   "Healing wasn't just about others — it started with me. Energy
                   is powerful. Energy transforms. Energy connects."
                 </p>
@@ -428,7 +428,7 @@ export default function HomePage() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-slate-900 text-white px-8 py-4 rounded-full text-lg font-medium shadow-xl shadow-slate-900/20 hover:bg-slate-800 transition-colors"
+                className="bg-[#1E7A6B] text-white px-8 py-4 rounded-full text-lg font-medium shadow-xl shadow-[#1E7A6B]/20 hover:bg-[#155A4E] transition-colors"
               >
                 Read Full Story
               </motion.button>
@@ -447,10 +447,10 @@ export default function HomePage() {
             variants={fadeUpVariants}
             className="text-center mb-20"
           >
-            <h2 className="text-5xl md:text-6xl font-serif font-bold mb-6 text-slate-900">
+            <h2 className="text-5xl md:text-6xl font-serif font-bold mb-6 text-[#2E4A3A]">
               Voices of Healing
             </h2>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto font-light">
+            <p className="text-xl text-[#6B7A55]/90 max-w-2xl mx-auto font-light">
               Real transformations from beautiful souls.
             </p>
           </motion.div>
@@ -485,24 +485,24 @@ export default function HomePage() {
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ delay: 0.5 + j * 0.1 }}
                     >
-                      <Star className="w-5 h-5 fill-[#78632C] text-[#78632C] drop-shadow-sm" />
+                      <Star className="w-5 h-5 fill-[#D4A843] text-[#D4A843] drop-shadow-sm" />
                     </motion.div>
                   ))}
                 </div>
 
-                <p className="text-slate-700 mb-8 italic text-lg leading-relaxed relative z-10">
+                <p className="text-[#6B7A55] mb-8 italic text-lg leading-relaxed relative z-10">
                   "{testimonial.content}"
                 </p>
 
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#BFE1D3] to-[#BFE1D3]/60 flex items-center justify-center font-bold text-lg text-[#78632C] shadow-inner">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#BFE1D3] to-[#BFE1D3]/60 flex items-center justify-center font-bold text-lg text-[#1E7A6B] shadow-inner">
                     {testimonial.name.charAt(0)}
                   </div>
                   <div>
-                    <p className="font-bold text-slate-900">
+                    <p className="font-bold text-[#2E4A3A]">
                       {testimonial.name}
                     </p>
-                    <p className="text-sm font-medium text-[#78632C]">
+                    <p className="text-sm font-medium text-[#1E7A6B]">
                       {testimonial.role}
                     </p>
                   </div>
@@ -521,7 +521,7 @@ export default function HomePage() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="absolute inset-0 bg-gradient-to-r from-[#78632C]/60 via-[#BFE1D3]/60 to-[#78632C]/60 rounded-[3rem] blur-2xl opacity-20"
+            className="absolute inset-0 bg-gradient-to-r from-[#1E7A6B]/60 via-[#D4A843]/60 to-[#BFE1D3]/60 rounded-[3rem] blur-2xl opacity-20"
           />
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -530,24 +530,24 @@ export default function HomePage() {
             transition={{ duration: 0.8 }}
             className="relative bg-white/80 backdrop-blur-2xl rounded-[3rem] p-12 md:p-20 text-center shadow-2xl border border-white/50 overflow-hidden"
           >
-            <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#78632C] via-[#BFE1D3] to-[#78632C]" />
+            <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#1E7A6B] via-[#D4A843] to-[#BFE1D3]" />
 
             <motion.div
               variants={floatingVariants}
               animate="animate"
               className="inline-block p-4 rounded-full bg-[#BFE1D3] mb-8"
             >
-              <Flower2 className="w-10 h-10 text-[#78632C]" />
+              <Flower2 className="w-10 h-10 text-[#1E7A6B]" />
             </motion.div>
 
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 text-slate-900 leading-tight">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 text-[#2E4A3A] leading-tight">
               Ready to{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#78632C] to-[#78632C]/70">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4A843] to-[#D4A843]/70">
                 Bloom?
               </span>
             </h2>
 
-            <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+            <p className="text-xl text-[#6B7A55]/90 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
               Healing starts with one small step — and you're already on your
               way. Book your session, join a workshop, or simply connect.
             </p>
@@ -555,10 +555,10 @@ export default function HomePage() {
             <motion.button
               whileHover={{
                 scale: 1.05,
-                boxShadow: "0 20px 25px -5px rgba(120, 99, 44, 0.4)",
+                boxShadow: "0 20px 25px -5px rgba(212, 168, 67, 0.4)",
               }}
               whileTap={{ scale: 0.95 }}
-              className="bg-[#78632C] text-white px-10 py-5 rounded-full text-xl font-medium shadow-xl transition-all hover:bg-[#5c4c21]"
+              className="bg-[#D4A843] text-white px-10 py-5 rounded-full text-xl font-medium shadow-xl transition-all hover:bg-[#B8902E]"
             >
               Begin Your Healing Journey
             </motion.button>
@@ -568,13 +568,13 @@ export default function HomePage() {
 
       {/* Footer */}
       <footer className="bg-stone-950 text-white py-16 px-6 relative z-10">
-        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#78632C]/50 to-transparent" />
+        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#1E7A6B]/50 to-transparent" />
         <div className="max-w-7xl mx-auto px-6 text-center">
           <div className="flex items-center justify-center gap-3 mb-6">
             <img
-              src="/sun-logo.png"
+              src="/sun-logo-2.png"
               alt="logo"
-              className="h-50 w-50 object-cover"
+              className="h-60 w-72 object-cover"
             />
           </div>
           <p className="text-[#BFE1D3]/90 mb-10 text-lg font-light italic">

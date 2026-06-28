@@ -8,8 +8,6 @@ import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 import { WhatsAppFloat } from "@/components/whatsapp-float";
 
-import { CustomCursor } from "@/components/custom-cursor";
-
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -29,7 +27,6 @@ function ClientLayoutContent() {
 
   return (
     <>
-      <CustomCursor />
       <WhatsAppFloat />
       <Analytics />
     </>
